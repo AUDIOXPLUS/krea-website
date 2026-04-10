@@ -76,9 +76,9 @@ const translations = {
 
         // Francesco
         "francesco.label": "04 \u2014 The Craftsman",
-        "francesco.lead": "Every KREA transducer is the work of one mind, one vision, one pair of hands.",
-        "francesco.p1": "Francesco Richichi designs, engineers, and assembles every component. There is no assembly line. There is no delegation of critical decisions. Every motor geometry, every suspension formulation, every cone material \u2014 conceived, tested, and refined by a single engineer who refuses to release anything that does not meet his standard.",
-        "francesco.p2": "This is not a limitation. It is the guarantee. When one person is responsible for everything, there is nowhere for compromise to hide.",
+        "francesco.lead": "Over thirty years of experience in acoustic engineering. One vision. No compromise.",
+        "francesco.p1": "Francesco Richichi is an engineer, audio consultant, and one of the foremost experts in acoustic reproduction. For more than three decades he has designed transducers and acoustic systems, holding seminars around the world and consulting for the industry at its highest levels. Many of his creations are hidden inside the products of other brands \u2014 engineered by Francesco, produced under other names.",
+        "francesco.p2": "Every KREA is conceived with the same philosophy that defines a master watchmaker or a luthier crafting a Stradivari: each unit is the product of an artisan\u2019s discipline, where every detail is deliberate and every decision is final. This is not mass production refined. This is something else entirely.",
         "francesco.origin": "Carefully handcrafted in Italy.",
 
         // Contact
@@ -196,9 +196,9 @@ const translations = {
 
         // Francesco
         "francesco.label": "04 \u2014 L\u2019Artigiano",
-        "francesco.lead": "Ogni trasduttore KREA \u00e8 il lavoro di una mente, una visione, un paio di mani.",
-        "francesco.p1": "Francesco Richichi progetta, ingegnerizza e assembla ogni componente. Non c\u2019\u00e8 una catena di montaggio. Non c\u2019\u00e8 delega delle decisioni critiche. Ogni geometria del motore, ogni formulazione della sospensione, ogni materiale del cono \u2014 concepito, testato e perfezionato da un singolo ingegnere che rifiuta di rilasciare qualsiasi cosa non soddisfi il suo standard.",
-        "francesco.p2": "Questa non \u00e8 una limitazione. \u00c8 la garanzia. Quando una sola persona \u00e8 responsabile di tutto, il compromesso non ha dove nascondersi.",
+        "francesco.lead": "Oltre trent\u2019anni di esperienza nell\u2019ingegneria acustica. Una visione. Nessun compromesso.",
+        "francesco.p1": "Francesco Richichi \u00e8 ingegnere, consulente audio e uno dei massimi esperti di riproduzione acustica. Da oltre tre decenni progetta trasduttori e sistemi acustici, tenendo seminari in tutto il mondo e offrendo consulenza ai pi\u00f9 alti livelli dell\u2019industria. Molte delle sue creature sono nascoste all\u2019interno dei prodotti di altri brand \u2014 progettate da Francesco, prodotte sotto altri nomi.",
+        "francesco.p2": "Ogni KREA nasce con la stessa filosofia che definisce un maestro orologiaio o un liutaio che costruisce uno Stradivari: ogni unit\u00e0 \u00e8 il prodotto della disciplina di un artigiano, dove ogni dettaglio \u00e8 deliberato e ogni decisione \u00e8 definitiva. Questa non \u00e8 produzione di massa perfezionata. \u00c8 qualcosa di completamente diverso.",
         "francesco.origin": "Accuratamente realizzato a mano in Italia.",
 
         // Contact
