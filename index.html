@@ -48,9 +48,9 @@
         .enter-btn {
             position: absolute;
             z-index: 3;
-            bottom: calc(15% + env(safe-area-inset-bottom));
+            top: 50%;
             left: 50%;
-            transform: translateX(-50%);
+            transform: translate(-50%, -50%);
             text-decoration: none;
             display: flex;
             flex-direction: column;
@@ -203,7 +203,7 @@
                 padding: 10px 24px;
             }
             .enter-btn {
-                bottom: calc(10% + env(safe-area-inset-bottom));
+                top: 50%;
             }
             .enter-btn.visible .enter-line {
                 width: 50px;
