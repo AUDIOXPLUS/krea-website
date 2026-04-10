@@ -95,17 +95,19 @@
             z-index: 0;
             pointer-events: none;
             opacity: 0;
-            transition: opacity 1.5s cubic-bezier(0.16, 1, 0.3, 1),
-                        border-color 1.5s cubic-bezier(0.16, 1, 0.3, 1),
-                        background 1.5s cubic-bezier(0.16, 1, 0.3, 1),
-                        box-shadow 1.5s cubic-bezier(0.16, 1, 0.3, 1);
+            transition: opacity 4s cubic-bezier(0.16, 1, 0.3, 1),
+                        border-color 4s cubic-bezier(0.16, 1, 0.3, 1),
+                        background 4s cubic-bezier(0.16, 1, 0.3, 1),
+                        backdrop-filter 4s cubic-bezier(0.16, 1, 0.3, 1),
+                        -webkit-backdrop-filter 4s cubic-bezier(0.16, 1, 0.3, 1),
+                        box-shadow 4s cubic-bezier(0.16, 1, 0.3, 1);
         }
         .enter-btn.blurred .enter-blur-box {
             opacity: 1;
             border-color: rgba(196, 163, 90, 0.5);
             background: rgba(0, 0, 0, 0.4);
-            backdrop-filter: blur(16px);
-            -webkit-backdrop-filter: blur(16px);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
             box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
         }
 
@@ -240,10 +242,10 @@
         setTimeout(function() {
             btn.classList.add('visible');
         }, 12000);
-        // Step 2: Blurred box appears behind after 4s more
+        // Step 2: Blurred box fades in slowly 1s after text
         setTimeout(function() {
             btn.classList.add('blurred');
-        }, 12000);
+        }, 13000);
     </script>
 </body>
 </html>
