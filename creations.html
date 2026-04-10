@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creations — KREA Audio</title>
+    <meta name="description" content="KREA Creations. Signature Series, Essential Series, MONOLITE. Three systems, one philosophy.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <video class="page-bg-video" autoplay muted loop playsinline><source src="images/bg-creations.mp4" type="video/mp4"></video>
+    <div class="page-bg-overlay"></div>
+
+    <!-- NAV -->
+    <nav class="nav">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-logo"><img src="images/logo-krea-no-bg-2.png" alt="KREA"></a>
+            <div class="nav-links">
+                <a href="philosophy.html" class="nav-link" data-i18n="nav.philosophy">Philosophy</a>
+                <a href="covenant.html" class="nav-link" data-i18n="nav.covenant">Covenant</a>
+                <a href="creations.html" class="nav-link active" data-i18n="nav.creations">Creations</a>
+                <a href="craftsman.html" class="nav-link" data-i18n="nav.craftsman">The Craftsman</a>
+                <a href="contact.html" class="nav-link" data-i18n="nav.contact">Contact</a>
+            </div>
+            <div class="nav-right">
+                <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+                    <span class="lang-option active" data-lang="en">EN</span>
+                    <span class="lang-divider">/</span>
+                    <span class="lang-option" data-lang="it">IT</span>
+                </button>
+                <button class="nav-hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+            </div>
+        </div>
+    </nav>
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="philosophy.html" class="mobile-link" data-i18n="nav.philosophy">Philosophy</a>
+        <a href="covenant.html" class="mobile-link" data-i18n="nav.covenant">Covenant</a>
+        <a href="creations.html" class="mobile-link" data-i18n="nav.creations">Creations</a>
+        <a href="craftsman.html" class="mobile-link" data-i18n="nav.craftsman">The Craftsman</a>
+        <a href="contact.html" class="mobile-link" data-i18n="nav.contact">Contact</a>
+    </div>
+
+    <!-- PAGE HEADER -->
+    <header class="page-header">
+        <div class="page-header-bg"><img src="images/frame_011.jpg" alt=""></div>
+        <div class="container">
+            <p class="page-label anim-fade" data-i18n="creations.label">03 — Creations</p>
+            <h1 class="page-title anim-fade" data-i18n="creations.title">Three Systems. One Philosophy.</h1>
+        </div>
+    </header>
+
+    <!-- SIGNATURE -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="product">
+                <div class="product-image anim-fade">
+                    <img src="images/signature-trio.jpg" alt="KREA Signature Series" loading="lazy">
+                </div>
+                <div class="product-content anim-fade">
+                    <span class="product-badge gold">Flagship</span>
+                    <h2 class="product-name">Signature Series</h2>
+                    <p class="product-tagline" data-i18n="signature.tagline">The absolute reference. Where physics meets artistry.</p>
+                    <p class="product-desc" data-i18n="signature.desc">Underhung motor architecture with radial magnetization. Space-alloy motor assembly with N55 neodymium magnets. Glass crystal cone. Carbon fiber voice coil. Zero-glue motor. Every millimeter of excursion is linear and musical.</p>
+                    <div class="product-specs">
+                        <div class="spec"><span class="spec-value">S6</span><span class="spec-label">6.5" — 30mm Xmax</span></div>
+                        <div class="spec"><span class="spec-value">S3</span><span class="spec-label">3" — 15mm Xmax</span></div>
+                        <div class="spec"><span class="spec-value">S1</span><span class="spec-label">1" Tweeter</span></div>
+                    </div>
+                    <button class="product-more" data-modal="signature-modal" data-i18n="creations.discover">Discover more</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ESSENTIAL -->
+    <section class="section">
+        <div class="container">
+            <div class="product reverse">
+                <div class="product-image anim-fade">
+                    <img src="images/essential-trio.jpg" alt="KREA Essential Series" loading="lazy">
+                </div>
+                <div class="product-content anim-fade">
+                    <span class="product-badge red">Core</span>
+                    <h2 class="product-name">Essential Series</h2>
+                    <p class="product-tagline" data-i18n="essential.tagline">The KREA philosophy, distilled. No compromise where it matters.</p>
+                    <p class="product-desc" data-i18n="essential.desc">The Essential Series carries the same engineering DNA that defines every KREA creation. Every component is designed with purpose, every material chosen for performance. The entry point into the KREA ecosystem — but never a compromise.</p>
+                    <div class="product-specs">
+                        <div class="spec"><span class="spec-value">E6</span><span class="spec-label">6.5" Woofer</span></div>
+                        <div class="spec"><span class="spec-value">E3</span><span class="spec-label">3" Midrange</span></div>
+                        <div class="spec"><span class="spec-value">E1</span><span class="spec-label">1" Tweeter</span></div>
+                    </div>
+                    <button class="product-more" data-modal="essential-modal" data-i18n="creations.discover">Discover more</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MONOLITE -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="product">
+                <div class="product-image anim-fade">
+                    <img src="images/monolite-box.png" alt="KREA MONOLITE" loading="lazy">
+                </div>
+                <div class="product-content anim-fade">
+                    <span class="product-badge dark">Subwoofer</span>
+                    <h2 class="product-name">MONOLITE</h2>
+                    <p class="product-tagline" data-i18n="monolite.tagline">28 Hz. From a box that fits in your hand.</p>
+                    <p class="product-desc" data-i18n="monolite.desc">Physics says this should be impossible. Genuine low-frequency extension to 28 Hz from an enclosure measuring 120 &times; 330 &times; 180 millimeters. Zero Transmission Architecture eliminates all structural vibration. The bass originates at the MONOLITE membranes, and from nowhere else.</p>
+                    <div class="product-specs">
+                        <div class="spec"><span class="spec-value">28 Hz</span><span class="spec-label" data-i18n="monolite.spec1">Low frequency limit</span></div>
+                        <div class="spec"><span class="spec-value">34mm</span><span class="spec-label" data-i18n="monolite.spec2">Linear excursion</span></div>
+                        <div class="spec"><span class="spec-value">1.75L</span><span class="spec-label" data-i18n="monolite.spec3">Internal volume</span></div>
+                    </div>
+                    <button class="product-more" data-modal="monolite-modal" data-i18n="creations.discover">Discover more</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="gallery">
+        <div class="gallery-strip">
+            <img src="images/signature-pro.png" alt="KREA Signature" loading="lazy">
+            <img src="images/essential-red.jpg" alt="KREA Essential" loading="lazy">
+            <img src="images/components-pro.png" alt="KREA components" loading="lazy">
+            <img src="images/covenant-detail.jpg" alt="Signature detail" loading="lazy">
+            <img src="images/essential-pro.png" alt="KREA Essential" loading="lazy">
+            <img src="images/signature-gold.jpg" alt="KREA Signature" loading="lazy">
+        </div>
+    </section>
+
+    <!-- MODALS -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal" id="signature-modal">
+            <button class="modal-close" aria-label="Close">&times;</button>
+            <div class="modal-scroll">
+                <h2>Signature Series</h2>
+                <p class="modal-subtitle">S6 &amp; S3 — Engineering Without Compromise</p>
+                <div class="modal-gallery">
+                    <img src="images/signature-pro.png" alt="Signature Series" loading="lazy">
+                    <img src="images/signature-gold.jpg" alt="Signature front" loading="lazy">
+                    <img src="images/covenant-detail.jpg" alt="Signature top detail" loading="lazy">
+                </div>
+                <div class="modal-features">
+                    <div class="modal-feature">
+                        <h4>01 — Underhung Motor</h4>
+                        <p>90% of high-end loudspeakers use an overhung motor — long coil, short gap. The moment the coil moves, windings exit the gap, the Bl force factor degrades, and distortion rises. The SIGNATURE S6 motor is underhung with 30 mm of linear excursion. The S3 achieves 15 mm — unequaled in any 3" loudspeaker. Distortion at full excursion remains below 0.5% THD, where an equivalent overhung exceeds 2–5%.</p>
+                    </div>
+                    <div class="modal-feature">
+                        <h4>02 — Radial Magnetization</h4>
+                        <p>Conventional motors use axial magnetization — the magnet beneath the coil, flux rising upward. To achieve 30 mm of excursion, the motor becomes a tower. SIGNATURE uses radial magnetization: magnets at the sides of the gap, flux crossing horizontally. 30 mm of excursion in a depth that conventional motors use for 8 mm. A 6.5" driver with the bass performance of a 10" subwoofer.</p>
+                    </div>
+                    <div class="modal-feature">
+                        <h4>03 — Space-Alloy Assembly · N55</h4>
+                        <p>Every high-end loudspeaker on the market uses mild steel in the magnetic circuit — a material that saturates at approximately 2.0 Tesla. SIGNATURE uses an alloy developed for aerospace and nuclear applications, with saturation well beyond steel limits. Combined with N55 magnets — the highest grade of neodymium commercially available. The motor assembly material cost alone exceeds the retail price of many complete loudspeakers.</p>
+                    </div>
+                    <div class="modal-feature">
+                        <h4>04 — Optimized Circular Geometry</h4>
+                        <p>The unusual circular geometry is not industrial design. It is a direct consequence of radial magnetization. When flux travels horizontally, cylindrical geometry is the only geometry guaranteeing uniform field distribution across 360°. Optimized via FEM simulation with successive iterations until every hot-spot and dead zone was eliminated. Every curve has a magnetic reason.</p>
+                    </div>
+                    <div class="modal-feature">
+                        <h4>05 — Zero Glue Motor</h4>
+                        <p>In virtually every loudspeaker motor, components are joined with adhesive. Every adhesive joint is a magnetic discontinuity with permeability close to air. The SIGNATURE motor is zero glue — components precision-machined and mechanically assembled with zero-thickness interfaces. No adhesive between magnet and backplate, no adhesive between topplate and pole. The circuit behaves exactly as simulation predicts.</p>
+                    </div>
+                    <div class="modal-feature">
+                        <h4>06 — Internal Phase Plug–Radiator</h4>
+                        <p>At 30 mm of excursion, the sealed air chamber beneath the dust cap becomes a non-linear pneumatic spring adding distortion and dynamic compression. SIGNATURE integrates a precision phase plug–radiator that linearizes airflow and actively contributes to thermal dissipation. Conventional drivers drill holes in the pole. Our phase plug shapes the flow.</p>
+                    </div>
+                    <div class="modal-feature">
+                        <h4>07 — Carbon Fiber Voice Coil</h4>
+                        <p>Carbon fiber former — specific stiffness superior to any polymer or metal, no eddy currents. Edge-wound flat wire with dual winding eliminates voids between windings, maximizing conductor-to-void ratio. Vented with calibrated holes for controlled porosity — hot air does not remain trapped. Compare the fill factor, the thermal dissipation, the rigidity.</p>
+                    </div>
+                    <div class="modal-feature">
+                        <h4>08 — No Terminals · Direct Connection</h4>
+                        <p>Coil leads exit directly from the former without interruption. No intermediate solder joint, no terminal to crimp, no spring connector. Zero added parasitic resistance. Zero future oxidation points. The signal from coil to cable is not degraded by joints before it reaches your cable. Premium cables finally make sense.</p>
+                    </div>
+                    <div class="modal-feature">
+                        <h4>09 — FEM Suspension · Custom Chemistry</h4>
+                        <p>An elastomer with chemical formulation designed specifically for this driver. Every corrugation, radius of curvature, and transition optimized via FEM to eliminate buckling, minimize self-resonances, and maintain linear compliance. Not a catalog part resized to fit — a three-dimensional surface calculated to the tenth of a millimeter.</p>
+                    </div>
+                    <div class="modal-feature">
+                        <h4>10 — Glass Crystal Cone</h4>
+                        <p>Stiffness-to-mass ratio that conventional materials cannot equal. A cone must move as a rigid piston without flexing. Paper is light but flexible. Aluminum is rigid but heavy with violent breakup. Glass crystal has high stiffness, contained mass, and manageable distributed breakup. Non-conventional cone-to-coil attachment geometry eliminates the weak point.</p>
+                    </div>
+                    <div class="modal-feature">
+                        <h4>11 — Mechanical Spider</h4>
+                        <p>Organic geometry — not standard concentric corrugations, but a structural pattern distributing compliance three-dimensionally. FEM-developed for maximum compliance (30 mm demands it) while maintaining precise centering at minimum mass. The acceleration factor of a light, fast driver — the reactivity of a professional midrange — with the stroke of a subwoofer.</p>
+                    </div>
+                    <div class="modal-feature">
+                        <h4>12 — Xmax = Xmech</h4>
+                        <p>In SIGNATURE, Xmax and Xmech coincide. No hidden margin, no gray zone between "linear" and "mechanical." Every single millimeter of excursion is linear and usable. When others declare 15 mm Xmech and 6 mm Xmax, the remaining 9 mm exist only to prevent self-destruction — not to produce music. We have no spare millimeters. Every millimeter produces music.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="essential-modal">
+            <button class="modal-close" aria-label="Close">&times;</button>
+            <div class="modal-scroll">
+                <h2>Essential Series</h2>
+                <p class="modal-subtitle">E6 · E3 · E1 — Crafted Without Compromise</p>
+                <div class="modal-gallery">
+                    <img src="images/essential-pro.png" alt="Essential Series" loading="lazy">
+                    <img src="images/essential-red.jpg" alt="Essential front" loading="lazy">
+                </div>
+                <div class="modal-features">
+                    <div class="modal-feature">
+                        <h4>01 — Neodymium Overhung Motor · N55</h4>
+                        <p>The ESSENTIAL motor uses an overhung topology — efficient, well-understood, and capable of excellent sensitivity. The magnetic circuit uses the same aerospace alloy and N55 extreme-grade neodymium as the SIGNATURE series. Every Tesla generated by the magnet reaches the gap. Motor geometry optimized through FEM simulation to eliminate field hot-spots and dead zones.</p>
+                    </div>
+                    <div class="modal-feature">
+                        <h4>02 — Conventional Architecture, Unconventional Execution</h4>
+                        <p>ESSENTIAL uses conventional solutions for a deliberate reason: because done well, they are genuinely excellent. The difference is in every decision during execution — gap tolerance, coil winding tension, suspension break-in protocol, final measurement and matching. ESSENTIAL is not trying to be SIGNATURE. It exists for those who want the best within conventional architecture — executed by the same hands.</p>
+                    </div>
+                    <div class="modal-feature">
+                        <h4>03 — Hand-Treated Carbon Fiber Cone</h4>
+                        <p>Each cone is treated individually by hand — a process that cannot be automated. The treatment controls surface porosity, stiffness distribution, and adhesion for the coil-to-cone joint. No two cones receive identical treatment because no two cones are identical before treatment. Matched pairs measure within tolerances that automated production lines cannot reliably achieve.</p>
+                    </div>
+                    <div class="modal-feature">
+                        <h4>04 — Carbon Fiber Voice Coil · Cone as Heatsink</h4>
+                        <p>Carbon fiber former — same material as SIGNATURE. Creates direct thermal continuity with the carbon fiber cone. The cone itself functions as a radiating heatsink: heat from the coil windings travels through the former into the cone body and is dissipated by the moving air. A deliberate thermal design increasing power handling without adding mass.</p>
+                    </div>
+                    <div class="modal-feature">
+                        <h4>05 — Suspension System</h4>
+                        <p>Each surround and spider is measured for compliance before assembly. Combined suspension stiffness is matched to motor and moving mass within tolerances tighter than most manufacturers apply to their entire production run. Drivers outside tolerance are disassembled and rebuilt — not adjusted. Tooled components produced to our specification, not catalog parts resized to fit.</p>
+                    </div>
+                    <div class="modal-feature">
+                        <h4>06 — Basket · No Terminals · Direct Connection</h4>
+                        <p>SIGNATURE-derived cast aluminum basket engineered to minimize internal acoustic reflections. Like the SIGNATURE, ESSENTIAL has no terminals — coil leads exit directly from the former without interruption. Zero parasitic resistance. Zero future oxidation points. Every unit hand-assembled, coil centered by hand, verified with shim gauge, tested for rub-and-buzz before curing.</p>
+                    </div>
+                    <div class="modal-feature">
+                        <h4>07 — Crossover Compatibility</h4>
+                        <p>The E6, E3, and E1 were designed together as a three-way system from day one. Impedance curves, sensitivity, and frequency response optimized not for individual performance alone, but for interaction at crossover points. The crossover does less work — because the drivers were built to hand off correctly, not forced into compatibility by steep filter slopes.</p>
+                    </div>
+                    <div class="modal-feature">
+                        <h4>08 — The Essential Promise</h4>
+                        <p>Same aerospace alloy. Same N55 neodymium. Same FEM simulation process. Same carbon fiber former. Same no-terminal direct connection. Same hands. What changes is the motor topology — overhung rather than underhung. What other brands consider their highest achievement, we consider our starting point.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="monolite-modal">
+            <button class="modal-close" aria-label="Close">&times;</button>
+            <div class="modal-scroll">
+                <h2>MONOLITE</h2>
+                <p class="modal-subtitle">Engineering Without Compromise — In the space of a book.</p>
+                <div class="modal-gallery">
+                    <img src="images/monolite-pro-1.png" alt="MONOLITE" loading="lazy">
+                    <img src="images/monolite-pro-2.png" alt="MONOLITE" loading="lazy">
+                </div>
+                <div class="modal-features">
+                    <div class="modal-feature">
+                        <h4>01 — The Impossible Box</h4>
+                        <p>120 &times; 330 &times; 180 millimeters. No conventional subwoofer architecture can produce genuine low-frequency extension in a volume this compact. The MONOLITE enclosure is the result of a system design where transducer and box were conceived simultaneously, optimized as a single inseparable unit. Internal acoustic volume of 1.75 litres — every cubic millimeter accounted for.</p>
+                    </div>
+                    <div class="modal-feature">
+                        <h4>02 — Unconventional Architecture</h4>
+                        <p>Ports, passive radiators, transmission lines — each promises something for nothing and extracts a price. Ported enclosures borrow bass from resonant energy with compromised timing and transient attack. The MONOLITE uses a proprietary architecture where every note is the direct consequence of transducer motion, not a resonant auxiliary system. The bass begins and ends precisely when the recording does.</p>
+                    </div>
+                    <div class="modal-feature">
+                        <h4>03 — Zero Transmission</h4>
+                        <p>Every loudspeaker generates reaction force transmitted into the enclosure and room structure — muddying the acoustic image with bass that comes from everywhere and nowhere. The MONOLITE uses an internal architecture that eliminates net reaction force entirely. Place it on a glass shelf — the structure will not vibrate. The bass originates at the membranes, and from nowhere else.</p>
+                    </div>
+                    <div class="modal-feature">
+                        <h4>04 — 34 mm of Linear Excursion</h4>
+                        <p>In a compact enclosure, extraordinary excursion compensates for limited radiating surface. This is physical necessity, not design preference. 34 mm peak-to-peak linear excursion — not mechanical travel, not the threshold of survival. Force factor, suspension compliance, and electrical inductance remain within a tightly controlled window across the entire stroke. What goes in, comes out.</p>
+                    </div>
+                    <div class="modal-feature">
+                        <h4>05 — Distortion Below Perception</h4>
+                        <p>Flat Bl(x) — approaching the theoretical ideal of a perfectly uniform field. Flat Cms(x) — substantially flat across the full working range as a design requirement, not an approximation. Controlled Le(x) — below perceptual significance. The bass you hear is the bass that was recorded. Nothing added. Nothing subtracted.</p>
+                    </div>
+                    <div class="modal-feature">
+                        <h4>06 — 28 Hz</h4>
+                        <p>A five-string bass guitar reaches 31 Hz. A concert grand piano descends to 27.5 Hz. Cinema LFE operates below 30 Hz. A subwoofer that reaches 28 Hz from 120 &times; 330 &times; 180 mm is doing something categorically different. Motor, suspension, acoustic volume, and enclosure behavior were engineered simultaneously for a single objective. The MONOLITE does not lose music below 30 Hz.</p>
+                    </div>
+                    <div class="modal-feature">
+                        <h4>07 — The Cabinet</h4>
+                        <p>Each panel treated as an acoustic element with its own resonance analysis. Wall geometry, bracing, and material damping push all structural resonances outside the operating range. Compact dimensions provide an inherent advantage: shorter panel spans mean higher natural resonant frequencies. Combined with Zero Transmission, the result is a subwoofer that can be placed on any surface without that surface participating in the reproduction.</p>
+                    </div>
+                    <div class="modal-feature">
+                        <h4>08 — Xmax = Xmech</h4>
+                        <p>The measured displacement limits confirm that the protection threshold coincides with the point where the force factor departs from its linear range. No gray zone. No region of technically-operating-but-already-distorting travel. No spare millimeters dedicated to survivability rather than music. Every millimeter of excursion produces linear acoustic output. Every millimeter is music.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <a href="index.html"><img src="images/logo-krea-no-bg-2.png" alt="KREA"></a>
+                <p class="footer-tagline">Just listen.</p>
+            </div>
+            <div class="footer-links">
+                <a href="https://www.facebook.com/profile.php?id=61575185498498" target="_blank" rel="noopener">Facebook</a>
+            </div>
+            <p class="footer-copy">&copy; 2026 KREA Audio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/i18n.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

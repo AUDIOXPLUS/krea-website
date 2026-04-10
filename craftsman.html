@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Craftsman — KREA Audio</title>
+    <meta name="description" content="Francesco Richichi. The mind, the vision, the hands behind every KREA transducer. Carefully handcrafted in Italy.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <video class="page-bg-video" autoplay muted loop playsinline><source src="images/bg-craftsman.mp4" type="video/mp4"></video>
+    <div class="page-bg-overlay"></div>
+
+    <!-- NAV -->
+    <nav class="nav">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-logo"><img src="images/logo-krea-no-bg-2.png" alt="KREA"></a>
+            <div class="nav-links">
+                <a href="philosophy.html" class="nav-link" data-i18n="nav.philosophy">Philosophy</a>
+                <a href="covenant.html" class="nav-link" data-i18n="nav.covenant">Covenant</a>
+                <a href="creations.html" class="nav-link" data-i18n="nav.creations">Creations</a>
+                <a href="craftsman.html" class="nav-link active" data-i18n="nav.craftsman">The Craftsman</a>
+                <a href="contact.html" class="nav-link" data-i18n="nav.contact">Contact</a>
+            </div>
+            <div class="nav-right">
+                <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+                    <span class="lang-option active" data-lang="en">EN</span>
+                    <span class="lang-divider">/</span>
+                    <span class="lang-option" data-lang="it">IT</span>
+                </button>
+                <button class="nav-hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+            </div>
+        </div>
+    </nav>
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="philosophy.html" class="mobile-link" data-i18n="nav.philosophy">Philosophy</a>
+        <a href="covenant.html" class="mobile-link" data-i18n="nav.covenant">Covenant</a>
+        <a href="creations.html" class="mobile-link" data-i18n="nav.creations">Creations</a>
+        <a href="craftsman.html" class="mobile-link" data-i18n="nav.craftsman">The Craftsman</a>
+        <a href="contact.html" class="mobile-link" data-i18n="nav.contact">Contact</a>
+    </div>
+
+    <!-- PAGE HEADER -->
+    <header class="page-header">
+        <div class="page-header-bg"><img src="images/frame_017.jpg" alt=""></div>
+        <div class="container">
+            <p class="page-label anim-fade" data-i18n="francesco.label">04 — The Craftsman</p>
+            <h1 class="page-title anim-fade">Francesco Richichi</h1>
+            <p class="page-subtitle anim-fade" data-i18n="francesco.origin">Carefully handcrafted in Italy.</p>
+        </div>
+    </header>
+
+    <!-- CONTENT -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="content-grid">
+                <div class="content-image anim-fade">
+                    <img src="images/francesco-new.png" alt="Francesco Richichi" loading="lazy">
+                </div>
+                <div class="content-text anim-fade">
+                    <p class="lead" data-i18n="francesco.lead">Every KREA transducer is the work of one mind, one vision, one pair of hands.</p>
+                    <p data-i18n="francesco.p1">Francesco Richichi designs, engineers, and assembles every component. There is no assembly line. There is no delegation of critical decisions. Every motor geometry, every suspension formulation, every cone material — conceived, tested, and refined by a single engineer who refuses to release anything that does not meet his standard.</p>
+                    <p data-i18n="francesco.p2">This is not a limitation. It is the guarantee. When one person is responsible for everything, there is nowhere for compromise to hide.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="content-grid reverse">
+                <div class="content-text anim-fade">
+                    <h2 class="section-title" data-i18n="francesco.vision.title">The Vision</h2>
+                    <p data-i18n="francesco.vision.p1">KREA was born from a simple observation: the audio industry had stopped asking the right questions. It was optimizing for production efficiency, not acoustic truth. It was designing for specifications, not for music.</p>
+                    <p data-i18n="francesco.vision.p2">Francesco chose a different path. Every KREA is designed for a specific owner, a specific vehicle, a specific acoustic environment. There are no compromises, no shortcuts, no catalog parts. Every component exists because it must.</p>
+                    <p class="francesco-origin" data-i18n="philosophy.justlisten">Just listen.</p>
+                </div>
+                <div class="content-image anim-fade">
+                    <img src="images/components-pro.png" alt="Francesco at CarMediaWorld" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <a href="index.html"><img src="images/logo-krea-no-bg-2.png" alt="KREA"></a>
+                <p class="footer-tagline">Just listen.</p>
+            </div>
+            <div class="footer-links">
+                <a href="https://www.facebook.com/profile.php?id=61575185498498" target="_blank" rel="noopener">Facebook</a>
+            </div>
+            <p class="footer-copy">&copy; 2026 KREA Audio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/i18n.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KREA — Just Listen.</title>
+    <meta name="description" content="KREA Audio. Engineering without compromise. Carefully handcrafted in Italy.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        html, body { height: 100%; margin: 0; }
+        body {
+            background: #0a0a0a;
+            color: #fff;
+            font-family: 'Inter', system-ui, 'Segoe UI', Roboto, Arial, sans-serif;
+        }
+        .wrap {
+            position: relative;
+            height: 100vh;
+            height: 100dvh;
+            overflow: hidden;
+            background: #0a0a0a;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        video {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            object-position: center;
+            background: #0a0a0a;
+        }
+        @media (max-width: 600px) {
+            video { object-fit: cover; object-position: 50% 50%; }
+        }
+        .overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(0deg, rgba(0,0,0,.55) 0%, rgba(0,0,0,.05) 40%, rgba(0,0,0,.05) 60%, rgba(0,0,0,.15) 100%);
+            pointer-events: none;
+        }
+
+        /* JUST LISTEN Button */
+        .enter-btn {
+            position: absolute;
+            z-index: 3;
+            bottom: calc(15% + env(safe-area-inset-bottom));
+            left: 50%;
+            transform: translateX(-50%);
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 1.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .enter-btn.visible {
+            opacity: 1;
+            pointer-events: all;
+        }
+
+        .enter-text {
+            display: block;
+            padding: 4px 40px;
+            position: relative;
+            z-index: 2;
+        }
+        .enter-text img {
+            height: 70px;
+            width: auto;
+            filter: invert(1) brightness(0.85) sepia(1) hue-rotate(5deg) saturate(0.5);
+            opacity: 0;
+            transition: opacity 1.8s cubic-bezier(0.16, 1, 0.3, 1),
+                        filter 0.5s;
+        }
+        .enter-btn.visible .enter-text img {
+            opacity: 1;
+        }
+        .enter-btn:hover .enter-text img {
+            filter: invert(1) brightness(1.2);
+        }
+
+        /* Blurred box behind everything — appears later */
+        .enter-blur-box {
+            position: absolute;
+            inset: -8px -12px;
+            border: 1.5px solid rgba(196, 163, 90, 0);
+            background: rgba(0, 0, 0, 0);
+            z-index: 0;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 1.5s cubic-bezier(0.16, 1, 0.3, 1),
+                        border-color 1.5s cubic-bezier(0.16, 1, 0.3, 1),
+                        background 1.5s cubic-bezier(0.16, 1, 0.3, 1),
+                        box-shadow 1.5s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .enter-btn.blurred .enter-blur-box {
+            opacity: 1;
+            border-color: rgba(196, 163, 90, 0.5);
+            background: rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+        }
+
+        .enter-btn:hover .enter-blur-box {
+            background: rgba(196, 163, 90, 0.9);
+            border-color: rgba(196, 163, 90, 1);
+            box-shadow: 0 0 40px rgba(196, 163, 90, 0.25), inset 0 0 20px rgba(196, 163, 90, 0.1);
+            backdrop-filter: none;
+            -webkit-backdrop-filter: none;
+        }
+
+        /* Decorative lines */
+        .enter-lines {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-top: 8px;
+            position: relative;
+            z-index: 2;
+        }
+        .enter-line {
+            width: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(196,163,90,0.5));
+            transition: width 2s cubic-bezier(0.16, 1, 0.3, 1) 0.3s;
+        }
+        .enter-line-r {
+            background: linear-gradient(90deg, rgba(196,163,90,0.5), transparent);
+        }
+        .enter-btn.visible .enter-line {
+            width: 80px;
+        }
+        .enter-hint {
+            font-family: 'Inter', system-ui, sans-serif;
+            font-size: 9px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: rgba(196, 163, 90, 0);
+            transition: color 2s cubic-bezier(0.16, 1, 0.3, 1) 0.8s;
+            white-space: nowrap;
+        }
+        .enter-btn.visible .enter-hint {
+            color: rgba(196, 163, 90, 0.45);
+        }
+
+        /* Subtle arrow pulse */
+        .enter-arrow {
+            margin-top: 6px;
+            opacity: 0;
+            transition: opacity 1.5s cubic-bezier(0.16, 1, 0.3, 1) 0.8s;
+            position: relative;
+            z-index: 2;
+        }
+        .enter-btn.visible .enter-arrow {
+            opacity: 0.6;
+            animation: arrowPulse 2.5s ease-in-out infinite;
+        }
+        .enter-btn:hover .enter-arrow {
+            opacity: 1;
+        }
+        .enter-arrow svg {
+            width: 22px;
+            height: 22px;
+        }
+
+        @keyframes arrowPulse {
+            0%, 100% { transform: translateY(0); opacity: 0.6; }
+            50% { transform: translateY(6px); opacity: 1; }
+        }
+
+        /* Ambient glow */
+        .enter-btn::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -40%);
+            width: 350px;
+            height: 120px;
+            border-radius: 50%;
+            background: radial-gradient(ellipse, rgba(196,163,90,0.08) 0%, transparent 70%);
+            opacity: 0;
+            transition: opacity 1.8s 0.5s;
+            pointer-events: none;
+        }
+        .enter-btn.visible::before {
+            opacity: 1;
+        }
+        .enter-btn:hover::before {
+            opacity: 0;
+        }
+
+        @media (max-width: 600px) {
+            .enter-text {
+                padding: 10px 24px;
+            }
+            .enter-btn {
+                bottom: calc(10% + env(safe-area-inset-bottom));
+            }
+            .enter-btn.visible .enter-line {
+                width: 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <video autoplay muted loop playsinline>
+            <source src="images/krea-hero.mp4" type="video/mp4">
+        </video>
+        <div class="overlay"></div>
+
+        <a href="philosophy.html" class="enter-btn" id="enterBtn">
+            <span class="enter-blur-box"></span>
+            <span class="enter-text"><img src="images/just-listen.png" alt="Just Listen"></span>
+            <span class="enter-lines">
+                <span class="enter-line"></span>
+                <span class="enter-hint">Enter</span>
+                <span class="enter-line enter-line-r"></span>
+            </span>
+            <span class="enter-arrow">
+                <svg viewBox="0 0 24 24" fill="none" stroke="rgba(196,163,90,0.8)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+            </span>
+        </a>
+    </div>
+
+    <script>
+        var btn = document.getElementById('enterBtn');
+        // Step 1: Show text + enter (no blur) after 4s
+        setTimeout(function() {
+            btn.classList.add('visible');
+        }, 4000);
+        // Step 2: Blurred box appears behind after 4s more
+        setTimeout(function() {
+            btn.classList.add('blurred');
+        }, 8000);
+    </script>
+</body>
+</html>

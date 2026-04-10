@@ -1,0 +1,8 @@
+node_modules/
+desktop.ini
+*.log
+.DS_Store
+Thumbs.db
+extracted_text.txt
+Resources/
+.claude/

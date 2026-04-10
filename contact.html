@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact — KREA Audio</title>
+    <meta name="description" content="Begin the conversation with KREA Audio. This is not an order form. It is the beginning of a partnership.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <video class="page-bg-video" autoplay muted loop playsinline><source src="images/bg-contact.mp4" type="video/mp4"></video>
+    <div class="page-bg-overlay"></div>
+
+    <!-- NAV -->
+    <nav class="nav">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-logo"><img src="images/logo-krea-no-bg-2.png" alt="KREA"></a>
+            <div class="nav-links">
+                <a href="philosophy.html" class="nav-link" data-i18n="nav.philosophy">Philosophy</a>
+                <a href="covenant.html" class="nav-link" data-i18n="nav.covenant">Covenant</a>
+                <a href="creations.html" class="nav-link" data-i18n="nav.creations">Creations</a>
+                <a href="craftsman.html" class="nav-link" data-i18n="nav.craftsman">The Craftsman</a>
+                <a href="contact.html" class="nav-link active" data-i18n="nav.contact">Contact</a>
+            </div>
+            <div class="nav-right">
+                <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+                    <span class="lang-option active" data-lang="en">EN</span>
+                    <span class="lang-divider">/</span>
+                    <span class="lang-option" data-lang="it">IT</span>
+                </button>
+                <button class="nav-hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+            </div>
+        </div>
+    </nav>
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="philosophy.html" class="mobile-link" data-i18n="nav.philosophy">Philosophy</a>
+        <a href="covenant.html" class="mobile-link" data-i18n="nav.covenant">Covenant</a>
+        <a href="creations.html" class="mobile-link" data-i18n="nav.creations">Creations</a>
+        <a href="craftsman.html" class="mobile-link" data-i18n="nav.craftsman">The Craftsman</a>
+        <a href="contact.html" class="mobile-link" data-i18n="nav.contact">Contact</a>
+    </div>
+
+    <!-- PAGE HEADER -->
+    <header class="page-header">
+        <div class="container">
+            <p class="page-label anim-fade" data-i18n="contact.label">05 — Begin the Conversation</p>
+            <h1 class="page-title anim-fade" data-i18n="contact.title">This Is Not an Order Form</h1>
+            <p class="page-subtitle anim-fade" data-i18n="contact.intro">A KREA exists for a specific purpose, in a specific place, for a specific person. Tell us about yours.</p>
+        </div>
+    </header>
+
+    <!-- FORM -->
+    <section class="section section-alt">
+        <div class="container">
+            <form class="contact-form anim-fade" id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name" data-i18n="contact.name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" data-i18n="contact.email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="phone" data-i18n="contact.phone">Phone</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="vehicle" data-i18n="contact.vehicle">Vehicle</label>
+                        <input type="text" id="vehicle" name="vehicle">
+                    </div>
+                </div>
+                <div class="form-group full">
+                    <label for="project" data-i18n="contact.project">Your Project</label>
+                    <textarea id="project" name="project" rows="6"></textarea>
+                </div>
+                <button type="submit" class="form-submit" data-i18n="contact.submit">Begin the Conversation</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <a href="index.html"><img src="images/logo-krea-no-bg-2.png" alt="KREA"></a>
+                <p class="footer-tagline">Just listen.</p>
+            </div>
+            <div class="footer-links">
+                <a href="https://www.facebook.com/profile.php?id=61575185498498" target="_blank" rel="noopener">Facebook</a>
+            </div>
+            <p class="footer-copy">&copy; 2026 KREA Audio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/i18n.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
