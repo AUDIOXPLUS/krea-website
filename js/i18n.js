@@ -11,42 +11,42 @@ const translations = {
         "hero.sub": "Carefully handcrafted in Italy",
 
         // Philosophy extras
-        "philosophy.subtitle": "We do not sell speakers. We enter into a partnership.",
-        "philosophy.p4": "Not a form. A conversation. Before we begin, we need to understand what you are building. This is not an order process. It is the first step in a relationship that will define how your system sounds for years to come.",
-        "philosophy.p5": "We receive your technical documentation — the vehicle, the target installation position, the available acoustic volume, the installation angle, the amplifier specifications, and the intended crossover point. From this data, the electromechanical identity of your transducer is calculated.",
-        "philosophy.p6": "Resonant frequency. Compliance. Moving mass. Force factor. Every Thiele-Small parameter is optimized for your specific acoustic environment. This is not a suggestion. It is the only way to guarantee the result.",
-        "philosophy.p7": "Performance is guaranteed not by satisfaction surveys, but by measurable, verifiable acoustic results — verified with equipment, not assumptions.",
-        "philosophy.p8": "Every KREA transducer is the result of a process that begins with listening — not to music, but to the owner. Understanding what they want. Understanding what the installation demands. And then engineering a solution that satisfies both.",
+        "philosophy.subtitle": "Where every speaker begins with a conversation.",
+        "philosophy.p4": "It starts with a conversation. You tell us about your project \u2014 the vehicle, the installation, the goals. We listen carefully, because what you share with us becomes the blueprint for what we build.",
+        "philosophy.p5": "From your technical details \u2014 installation position, available volume, amplifier, crossover points \u2014 we calculate the electromechanical identity of your transducer. Every parameter is tailored to your specific acoustic environment.",
+        "philosophy.p6": "Resonant frequency. Compliance. Moving mass. Force factor. Every Thiele-Small parameter is optimized not in the abstract, but for your real-world installation. This is how we ensure the result matches the promise.",
+        "philosophy.p7": "We verify our work with measurement and listening. Every KREA must perform not just to specification, but to musical satisfaction \u2014 verified with instruments and with ears.",
+        "philosophy.p8": "Every KREA begins with listening \u2014 to you. Understanding what you want, what your installation needs, and then crafting a solution that honors both.",
         "philosophy.justlisten": "Just listen.",
 
         // Covenant extras
         "covenant.subtitle": "Not a product. A relationship.",
-        "covenant.excl.title": "Exclusivity by Design",
-        "covenant.excl.lead": "Ferrari does not sell a car to anyone who can afford one. They evaluate the buyer. They protect the marque. KREA operates on the same principle.",
-        "covenant.excl.p1": "This is not arrogance. It is quality assurance. You cannot guarantee the experience without controlling who participates in it. A speaker installed incorrectly or in the wrong environment is a waste of an exceptional instrument.",
-        "covenant.excl.p2": "An owner who transfers a KREA component without authorization is passing on a customized instrument that was never optimized for the recipient. That is why resale without KREA authorization is permanently prohibited.",
+        "covenant.excl.title": "Made for You, Personally",
+        "covenant.excl.lead": "Every KREA is a custom instrument, designed and built for one person and one installation. This is not about exclusivity for its own sake \u2014 it is about ensuring that what we create truly works where it is meant to live.",
+        "covenant.excl.p1": "A KREA installed without proper calibration cannot deliver what it was designed to deliver. That is why we work closely with certified specialists to ensure every installation meets our shared expectations.",
+        "covenant.excl.p2": "Because each KREA is optimized for a specific installation, transferring it to a different environment means it may not perform as intended. If your plans change, we are here to help \u2014 whether that means recalibrating for a new vehicle or finding the right solution together.",
         "covenant.evo.title": "Continuous Evolution",
-        "covenant.evo.lead": "KREA engineering does not stop at the point of sale. Motor geometry refinement. Suspension chemistry optimization. Voice coil winding evolution.",
-        "covenant.evo.p1": "When these improvements become available, Lifetime Card holders access them at cost — materials and labor only, no market markup. You ship your transducer to KREA. It returns upgraded.",
+        "covenant.evo.lead": "Our work does not end when your KREA is installed. We continue to refine our engineering \u2014 motor geometry, suspension chemistry, voice coil winding \u2014 and these improvements are available to you.",
+        "covenant.evo.p1": "When improvements become available, you access them at cost \u2014 materials and labor only. Send us your transducer, and it returns upgraded. This is what a lifetime relationship looks like.",
 
         // Francesco extras
         "francesco.vision.title": "The Vision",
-        "francesco.vision.p1": "KREA was born from a simple observation: the audio industry had stopped asking the right questions. It was optimizing for production efficiency, not acoustic truth. It was designing for specifications, not for music.",
-        "francesco.vision.p2": "Francesco chose a different path. Every KREA is designed for a specific owner, a specific vehicle, a specific acoustic environment. There are no compromises, no shortcuts, no catalog parts. Every component exists because it must.",
+        "francesco.vision.p1": "KREA was born from a deeply personal conviction: that the best sound comes from understanding the person who will hear it. Not just the specifications, not just the vehicle \u2014 but the human being at the center of the experience.",
+        "francesco.vision.p2": "This is why every KREA begins with a conversation, and why every transducer is shaped by the person it is made for. There are no shortcuts, because shortcuts mean accepting that something could have been better. And that is something Francesco has never been willing to do.",
 
         // Philosophy
         "philosophy.label": "01 \u2014 Philosophy",
         "philosophy.title": "Engineering Without Compromise",
-        "philosophy.lead": "Every audio company on the market will sell you a speaker. You visit a website, you select a model, you enter a credit card number, and two days later a box arrives. The transaction is complete. The relationship is over.",
-        "philosophy.p1": "KREA does not work this way. We do not sell speakers. We enter into a partnership with the people who will use them.",
-        "philosophy.p2": "Before a single component is committed to production, we need to know who you are. What you are building. The vehicle. The acoustic environment. The objective. This is not bureaucracy. It is the foundation of everything that follows.",
-        "philosophy.p3": "A speaker sold without this information is a generic product. A KREA exists for a specific purpose, in a specific place, for a specific person. Without knowing all three, it cannot exist.",
+        "philosophy.lead": "We believe that a truly great speaker cannot be designed in isolation. It needs context \u2014 the person who will listen, the space where it will live, the system it will be part of. That is why every KREA begins not with an order, but with a conversation.",
+        "philosophy.p1": "We want to know who you are. What inspires you. What you are building. This is not a formality \u2014 it is the foundation of everything we create for you.",
+        "philosophy.p2": "The vehicle, the acoustic environment, the listening goals \u2014 these details shape every decision we make. They allow us to design something that truly belongs to you.",
+        "philosophy.p3": "A KREA is not a product chosen from a catalog. It is something made for a specific purpose, in a specific place, for a specific person.",
 
         // Covenant
         "covenant.label": "02 \u2014 Covenant",
         "covenant.title": "A Partnership for Life",
-        "covenant.c1.title": "The Contract",
-        "covenant.c1.text": "Every KREA transducer is delivered under a signed agreement \u2014 not terms and conditions buried in a checkout page, but a formal document establishing mutual commitment between KREA and the owner.",
+        "covenant.c1.title": "The Promise",
+        "covenant.c1.text": "Every KREA transducer is accompanied by a signed agreement \u2014 a personal document that establishes a mutual commitment between us and you. Not fine print. A handshake.",
         "covenant.c2.title": "Built for Your Vehicle. Only.",
         "covenant.c2.text": "The entire electromechanical identity of every transducer is calculated for your specific installation. Resonant frequency, compliance, moving mass, force factor \u2014 optimized for your acoustic environment.",
         "covenant.c3.title": "Lifetime",
@@ -69,22 +69,22 @@ const translations = {
 
         // Monolite
         "monolite.tagline": "28 Hz. From a box that fits in your hand.",
-        "monolite.desc": "Physics says this should be impossible. Genuine low-frequency extension to 28 Hz from an enclosure measuring 120 \u00d7 330 \u00d7 180 millimeters. Zero Transmission Architecture eliminates all structural vibration. The bass originates at the MONOLITE membranes, and from nowhere else.",
+        "monolite.desc": "An extraordinary engineering challenge: genuine low-frequency extension to 28 Hz from an enclosure measuring 120 \u00d7 330 \u00d7 180 millimeters. Zero Transmission Architecture eliminates all structural vibration. The bass originates at the MONOLITE membranes, and from nowhere else.",
         "monolite.spec1": "Low frequency limit",
         "monolite.spec2": "Linear excursion",
         "monolite.spec3": "Internal volume",
 
         // Francesco
         "francesco.label": "04 \u2014 The Craftsman",
-        "francesco.lead": "Over thirty years of experience in acoustic engineering. One vision. No compromise.",
-        "francesco.p1": "Francesco Richichi is an engineer, audio consultant, and one of the foremost experts in acoustic reproduction. For more than three decades he has designed transducers and acoustic systems, holding seminars around the world and consulting for the industry at its highest levels. Many of his creations are hidden inside the products of other brands \u2014 engineered by Francesco, produced under other names.",
-        "francesco.p2": "Every KREA is conceived with the same philosophy that defines a master watchmaker or a luthier crafting a Stradivari: each unit is the product of an artisan\u2019s discipline, where every detail is deliberate and every decision is final. This is not mass production refined. This is something else entirely.",
+        "francesco.lead": "Over thirty years of listening, designing, and refining. A lifetime dedicated to the pursuit of musical truth.",
+        "francesco.p1": "Francesco Richichi is an engineer, audio consultant, and a lifelong student of acoustic reproduction. For more than three decades he has designed transducers and acoustic systems, sharing his knowledge through seminars around the world and collaborating with the industry at its highest levels. Many of his creations live inside the products of other brands \u2014 conceived by his hands, produced under other names. KREA is where he finally builds under his own.",
+        "francesco.p2": "Every KREA carries the same philosophy that guides a master watchmaker or a luthier crafting a Stradivari: patience, precision, and an intimate relationship between the maker and what is made. Each unit reflects an artisan\u2019s care \u2014 where every detail is considered and every decision is personal.",
         "francesco.origin": "Carefully handcrafted in Italy.",
 
         // Contact
         "contact.label": "05 \u2014 Begin the Conversation",
-        "contact.title": "This Is Not an Order Form",
-        "contact.intro": "A KREA exists for a specific purpose, in a specific place, for a specific person. Tell us about yours.",
+        "contact.title": "Let\u2019s Start with a Conversation",
+        "contact.intro": "Every KREA begins here \u2014 with you telling us about your project, your goals, and what music means to you.",
         "contact.name": "Full Name",
         "contact.email": "Email",
         "contact.phone": "Phone",
@@ -95,7 +95,7 @@ const translations = {
         // Modals
         "modal.signature.subtitle": "The absolute reference in transducer engineering.",
         "modal.signature.f1": "The coil remains fully immersed in the magnetic gap throughout its entire excursion. S6: 30mm linear excursion with distortion below 0.5% THD. S3: 15mm \u2014 unequaled in the 3\" category.",
-        "modal.signature.f2": "Aerospace-grade alloy motor assembly with the highest commercially available magnet grade. Material cost alone exceeds the retail price of many complete loudspeakers.",
+        "modal.signature.f2": "Aerospace-grade alloy motor assembly with the highest commercially available magnet grade. Extraordinary flux density with minimal waste.",
         "modal.signature.f3": "Stiffness-to-mass ratio unequaled by conventional materials. Rigid piston motion eliminates breakup artifacts and self-resonances.",
         "modal.signature.f4": "Mechanical assembly with zero-thickness interfaces. No adhesive as magnetic discontinuity. Flux uniformity matches FEM simulation predictions.",
         "modal.signature.f5": "Carbon fiber former with flat, edge-wound dual-path winding. Zero eddy currents. Calibrated ventilation holes for thermal management.",
@@ -131,42 +131,42 @@ const translations = {
         "hero.sub": "Accuratamente realizzato a mano in Italia",
 
         // Philosophy extras
-        "philosophy.subtitle": "Non vendiamo speaker. Entriamo in una partnership.",
-        "philosophy.p4": "Non un modulo. Una conversazione. Prima di iniziare, dobbiamo capire cosa state costruendo. Questo non \u00e8 un processo d\u2019ordine. \u00c8 il primo passo in una relazione che definir\u00e0 il suono del vostro sistema per gli anni a venire.",
-        "philosophy.p5": "Riceviamo la vostra documentazione tecnica \u2014 il veicolo, la posizione di installazione, il volume acustico disponibile, l\u2019angolo di installazione, le specifiche dell\u2019amplificatore e il punto di crossover previsto. Da questi dati, l\u2019identit\u00e0 elettromeccanica del vostro trasduttore viene calcolata.",
-        "philosophy.p6": "Frequenza di risonanza. Cedevolezza. Massa mobile. Fattore di forza. Ogni parametro Thiele-Small \u00e8 ottimizzato per il vostro specifico ambiente acustico. Questo non \u00e8 un suggerimento. \u00c8 l\u2019unico modo per garantire il risultato.",
-        "philosophy.p7": "Le prestazioni sono garantite non da sondaggi di soddisfazione, ma da risultati acustici misurabili e verificabili \u2014 verificati con strumentazione, non con supposizioni.",
-        "philosophy.p8": "Ogni trasduttore KREA \u00e8 il risultato di un processo che inizia con l\u2019ascolto \u2014 non della musica, ma del proprietario. Capire cosa vuole. Capire cosa richiede l\u2019installazione. E poi ingegnerizzare una soluzione che soddisfi entrambi.",
+        "philosophy.subtitle": "Dove ogni altoparlante nasce da una conversazione.",
+        "philosophy.p4": "Inizia con una conversazione. Ci racconti il tuo progetto \u2014 il veicolo, l\u2019installazione, gli obiettivi. Noi ascoltiamo con attenzione, perch\u00e9 ci\u00f2 che condividi con noi diventa il progetto di ci\u00f2 che costruiamo.",
+        "philosophy.p5": "Dai tuoi dettagli tecnici \u2014 posizione di installazione, volume disponibile, amplificatore, punti di crossover \u2014 calcoliamo l\u2019identit\u00e0 elettromeccanica del tuo trasduttore. Ogni parametro \u00e8 calibrato sul tuo specifico ambiente acustico.",
+        "philosophy.p6": "Frequenza di risonanza. Cedevolezza. Massa mobile. Fattore di forza. Ogni parametro Thiele-Small \u00e8 ottimizzato non in astratto, ma per la tua installazione reale. Cos\u00ec ci assicuriamo che il risultato sia all\u2019altezza della promessa.",
+        "philosophy.p7": "Verifichiamo il nostro lavoro con misurazioni e ascolto. Ogni KREA deve funzionare non solo secondo le specifiche, ma per soddisfazione musicale \u2014 verificata con gli strumenti e con le orecchie.",
+        "philosophy.p8": "Ogni KREA inizia con l\u2019ascolto \u2014 di te. Capire cosa desideri, cosa richiede la tua installazione, e poi creare una soluzione che onori entrambi.",
         "philosophy.justlisten": "Just listen.",
 
         // Covenant extras
         "covenant.subtitle": "Non un prodotto. Una relazione.",
-        "covenant.excl.title": "Esclusivit\u00e0 per Design",
-        "covenant.excl.lead": "Ferrari non vende un\u2019auto a chiunque possa permettersela. Valuta l\u2019acquirente. Protegge il marchio. KREA opera sullo stesso principio.",
-        "covenant.excl.p1": "Questa non \u00e8 arroganza. \u00c8 garanzia di qualit\u00e0. Non puoi garantire l\u2019esperienza senza controllare chi vi partecipa. Uno speaker installato in modo errato o nell\u2019ambiente sbagliato \u00e8 uno spreco di uno strumento eccezionale.",
-        "covenant.excl.p2": "Un proprietario che trasferisce un componente KREA senza autorizzazione sta passando uno strumento personalizzato che non \u00e8 mai stato ottimizzato per il destinatario. Per questo la rivendita senza autorizzazione KREA \u00e8 permanentemente proibita.",
+        "covenant.excl.title": "Fatto per Te, Personalmente",
+        "covenant.excl.lead": "Ogni KREA \u00e8 uno strumento su misura, progettato e costruito per una persona e un\u2019installazione. Non si tratta di esclusivit\u00e0 fine a s\u00e9 stessa \u2014 si tratta di assicurare che ci\u00f2 che creiamo funzioni davvero dove \u00e8 destinato a vivere.",
+        "covenant.excl.p1": "Un KREA installato senza la giusta calibrazione non pu\u00f2 offrire ci\u00f2 per cui \u00e8 stato progettato. Per questo lavoriamo a stretto contatto con specialisti certificati, per assicurare che ogni installazione sia all\u2019altezza delle aspettative condivise.",
+        "covenant.excl.p2": "Poich\u00e9 ogni KREA \u00e8 ottimizzato per un\u2019installazione specifica, trasferirlo in un ambiente diverso significa che potrebbe non performare come previsto. Se i tuoi piani cambiano, siamo qui per aiutarti \u2014 che si tratti di ricalibrare per un nuovo veicolo o di trovare insieme la soluzione giusta.",
         "covenant.evo.title": "Evoluzione Continua",
-        "covenant.evo.lead": "L\u2019ingegneria KREA non si ferma al punto vendita. Raffinamento della geometria del motore. Ottimizzazione della chimica della sospensione. Evoluzione dell\u2019avvolgimento della bobina.",
-        "covenant.evo.p1": "Quando questi miglioramenti diventano disponibili, i titolari della Lifetime Card vi accedono al costo \u2014 solo materiali e manodopera, nessun ricarico di mercato. Spedite il trasduttore a KREA. Torna aggiornato.",
+        "covenant.evo.lead": "Il nostro lavoro non finisce quando il tuo KREA \u00e8 installato. Continuiamo a perfezionare la nostra ingegneria \u2014 geometria del motore, chimica della sospensione, avvolgimento della bobina \u2014 e questi miglioramenti sono a tua disposizione.",
+        "covenant.evo.p1": "Quando i miglioramenti sono disponibili, puoi accedervi al costo \u2014 solo materiali e manodopera. Spedisci il tuo trasduttore, e torna aggiornato. Ecco come si presenta una relazione che dura tutta la vita.",
 
         // Francesco extras
         "francesco.vision.title": "La Visione",
-        "francesco.vision.p1": "KREA \u00e8 nata da una semplice osservazione: l\u2019industria audio aveva smesso di fare le domande giuste. Stava ottimizzando per l\u2019efficienza produttiva, non per la verit\u00e0 acustica. Stava progettando per le specifiche, non per la musica.",
-        "francesco.vision.p2": "Francesco ha scelto un percorso diverso. Ogni KREA \u00e8 progettato per un proprietario specifico, un veicolo specifico, un ambiente acustico specifico. Non ci sono compromessi, non ci sono scorciatoie, non ci sono parti da catalogo. Ogni componente esiste perch\u00e9 deve.",
+        "francesco.vision.p1": "KREA \u00e8 nata da una convinzione profondamente personale: che il suono migliore nasce dalla comprensione della persona che lo ascolter\u00e0. Non solo le specifiche, non solo il veicolo \u2014 ma l\u2019essere umano al centro dell\u2019esperienza.",
+        "francesco.vision.p2": "Per questo ogni KREA inizia con una conversazione, e ogni trasduttore \u00e8 plasmato dalla persona per cui \u00e8 fatto. Non ci sono scorciatoie, perch\u00e9 le scorciatoie significano accettare che qualcosa poteva essere migliore. E questo \u00e8 qualcosa che Francesco non \u00e8 mai stato disposto a fare.",
 
         // Philosophy
         "philosophy.label": "01 \u2014 Filosofia",
         "philosophy.title": "Ingegneria Senza Compromessi",
-        "philosophy.lead": "Ogni azienda audio sul mercato vi vender\u00e0 uno speaker. Visitate un sito, selezionate un modello, inserite una carta di credito, e due giorni dopo arriva una scatola. La transazione \u00e8 completa. La relazione \u00e8 finita.",
-        "philosophy.p1": "KREA non funziona cos\u00ec. Non vendiamo speaker. Entriamo in una partnership con le persone che li useranno.",
-        "philosophy.p2": "Prima che un singolo componente venga destinato alla produzione, dobbiamo sapere chi siete. Cosa state costruendo. Il veicolo. L\u2019ambiente acustico. L\u2019obiettivo. Questa non \u00e8 burocrazia. \u00c8 il fondamento di tutto ci\u00f2 che segue.",
-        "philosophy.p3": "Uno speaker venduto senza queste informazioni \u00e8 un prodotto generico. Un KREA esiste per uno scopo specifico, in un luogo specifico, per una persona specifica. Senza conoscere tutti e tre, non pu\u00f2 esistere.",
+        "philosophy.lead": "Crediamo che un grande altoparlante non possa essere progettato nell\u2019isolamento. Ha bisogno di contesto \u2014 la persona che ascolter\u00e0, lo spazio in cui vivr\u00e0, il sistema di cui far\u00e0 parte. Per questo ogni KREA non inizia con un ordine, ma con una conversazione.",
+        "philosophy.p1": "Vogliamo sapere chi sei. Cosa ti ispira. Cosa stai costruendo. Questa non \u00e8 una formalit\u00e0 \u2014 \u00e8 il fondamento di tutto ci\u00f2 che creiamo per te.",
+        "philosophy.p2": "Il veicolo, l\u2019ambiente acustico, gli obiettivi di ascolto \u2014 questi dettagli plasmano ogni decisione che prendiamo. Ci permettono di progettare qualcosa che ti appartiene davvero.",
+        "philosophy.p3": "Un KREA non \u00e8 un prodotto scelto da catalogo. \u00c8 qualcosa fatto per uno scopo specifico, in un luogo specifico, per una persona specifica.",
 
         // Covenant
         "covenant.label": "02 \u2014 Covenant",
         "covenant.title": "Una Partnership per la Vita",
-        "covenant.c1.title": "Il Contratto",
-        "covenant.c1.text": "Ogni trasduttore KREA viene consegnato con un accordo firmato \u2014 non termini e condizioni nascosti in una pagina di checkout, ma un documento formale che stabilisce un impegno reciproco tra KREA e il proprietario.",
+        "covenant.c1.title": "La Promessa",
+        "covenant.c1.text": "Ogni trasduttore KREA \u00e8 accompagnato da un accordo firmato \u2014 un documento personale che stabilisce un impegno reciproco tra noi e te. Non clausole in piccolo. Una stretta di mano.",
         "covenant.c2.title": "Costruito per il Tuo Veicolo. Solo.",
         "covenant.c2.text": "L\u2019intera identit\u00e0 elettromeccanica di ogni trasduttore \u00e8 calcolata per la tua installazione specifica. Frequenza di risonanza, cedevolezza, massa mobile, fattore di forza \u2014 ottimizzati per il tuo ambiente acustico.",
         "covenant.c3.title": "A Vita",
@@ -189,22 +189,22 @@ const translations = {
 
         // Monolite
         "monolite.tagline": "28 Hz. Da una scatola che sta in una mano.",
-        "monolite.desc": "La fisica dice che dovrebbe essere impossibile. Estensione genuina in bassa frequenza fino a 28 Hz da un cabinet di 120 \u00d7 330 \u00d7 180 millimetri. L\u2019Architettura Zero Transmission elimina ogni vibrazione strutturale. Il basso origina dalle membrane del MONOLITE, e da nessun altro luogo.",
+        "monolite.desc": "Una sfida ingegneristica straordinaria: estensione genuina in bassa frequenza fino a 28 Hz da un cabinet di 120 \u00d7 330 \u00d7 180 millimetri. L\u2019Architettura Zero Transmission elimina ogni vibrazione strutturale. Il basso origina dalle membrane del MONOLITE, e da nessun altro luogo.",
         "monolite.spec1": "Limite bassa frequenza",
         "monolite.spec2": "Escursione lineare",
         "monolite.spec3": "Volume interno",
 
         // Francesco
         "francesco.label": "04 \u2014 L\u2019Artigiano",
-        "francesco.lead": "Oltre trent\u2019anni di esperienza nell\u2019ingegneria acustica. Una visione. Nessun compromesso.",
-        "francesco.p1": "Francesco Richichi \u00e8 ingegnere, consulente audio e uno dei massimi esperti di riproduzione acustica. Da oltre tre decenni progetta trasduttori e sistemi acustici, tenendo seminari in tutto il mondo e offrendo consulenza ai pi\u00f9 alti livelli dell\u2019industria. Molte delle sue creature sono nascoste all\u2019interno dei prodotti di altri brand \u2014 progettate da Francesco, prodotte sotto altri nomi.",
-        "francesco.p2": "Ogni KREA nasce con la stessa filosofia che definisce un maestro orologiaio o un liutaio che costruisce uno Stradivari: ogni unit\u00e0 \u00e8 il prodotto della disciplina di un artigiano, dove ogni dettaglio \u00e8 deliberato e ogni decisione \u00e8 definitiva. Questa non \u00e8 produzione di massa perfezionata. \u00c8 qualcosa di completamente diverso.",
+        "francesco.lead": "Oltre trent\u2019anni di ascolto, progettazione e perfezionamento. Una vita dedicata alla ricerca della verit\u00e0 musicale.",
+        "francesco.p1": "Francesco Richichi \u00e8 ingegnere, consulente audio e studente appassionato della riproduzione acustica da una vita intera. Da oltre tre decenni progetta trasduttori e sistemi acustici, condividendo la sua conoscenza attraverso seminari in tutto il mondo e collaborando con l\u2019industria ai pi\u00f9 alti livelli. Molte delle sue creature vivono all\u2019interno dei prodotti di altri brand \u2014 concepite dalle sue mani, prodotte sotto altri nomi. KREA \u00e8 dove finalmente costruisce sotto il proprio.",
+        "francesco.p2": "Ogni KREA porta con s\u00e9 la stessa filosofia che guida un maestro orologiaio o un liutaio che costruisce uno Stradivari: pazienza, precisione e un rapporto intimo tra chi crea e ci\u00f2 che viene creato. Ogni unit\u00e0 riflette la cura di un artigiano \u2014 dove ogni dettaglio \u00e8 considerato e ogni decisione \u00e8 personale.",
         "francesco.origin": "Accuratamente realizzato a mano in Italia.",
 
         // Contact
         "contact.label": "05 \u2014 Inizia la Conversazione",
-        "contact.title": "Questo Non \u00c8 un Modulo d\u2019Ordine",
-        "contact.intro": "Un KREA esiste per uno scopo specifico, in un luogo specifico, per una persona specifica. Raccontaci il tuo.",
+        "contact.title": "Iniziamo con una Conversazione",
+        "contact.intro": "Ogni KREA inizia qui \u2014 con te che ci racconti il tuo progetto, i tuoi obiettivi, e cosa significa la musica per te.",
         "contact.name": "Nome Completo",
         "contact.email": "Email",
         "contact.phone": "Telefono",
@@ -215,7 +215,7 @@ const translations = {
         // Modals
         "modal.signature.subtitle": "Il riferimento assoluto nell\u2019ingegneria dei trasduttori.",
         "modal.signature.f1": "La bobina rimane completamente immersa nel traferro per tutta la sua escursione. S6: 30mm di escursione lineare con distorsione sotto lo 0.5% THD. S3: 15mm \u2014 ineguagliato nella categoria 3\".",
-        "modal.signature.f2": "Gruppo motore in lega aerospaziale con il pi\u00f9 alto grado di magnete commercialmente disponibile. Il solo costo del materiale del motore supera il prezzo al dettaglio di molti altoparlanti completi.",
+        "modal.signature.f2": "Gruppo motore in lega aerospaziale con il pi\u00f9 alto grado di magnete commercialmente disponibile. Densit\u00e0 di flusso straordinaria con dispersione minima.",
         "modal.signature.f3": "Rapporto rigidezza-massa ineguagliato dai materiali convenzionali. Moto pistonico rigido che elimina artefatti di breakup e auto-risonanze.",
         "modal.signature.f4": "Assemblaggio meccanico con interfacce a spessore zero. Nessun adesivo come discontinuit\u00e0 magnetica. L\u2019uniformit\u00e0 del flusso corrisponde alle previsioni della simulazione FEM.",
         "modal.signature.f5": "Supporto in fibra di carbonio con avvolgimento piatto a doppio percorso. Zero correnti parassite. Fori di ventilazione calibrati per la gestione termica.",
