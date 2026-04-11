@@ -32,7 +32,7 @@ const translations = {
         // Francesco extras
         "francesco.vision.title": "The Vision",
         "francesco.vision.p1": "KREA was born from a deeply personal conviction: that the best sound comes from understanding the person who will hear it. Not just the specifications, not just the vehicle \u2014 but the human being at the center of the experience.",
-        "francesco.vision.p2": "This is why every KREA begins with a conversation, and why every transducer is shaped by the person it is made for. There are no shortcuts, because shortcuts mean accepting that something could have been better. There are no compromises, no shortcuts, no catalog parts. Every component exists because it must.",
+        "francesco.vision.p2": "This is why every KREA begins with a conversation, and why every transducer is shaped by the person it is made for. There are no shortcuts, because shortcuts mean accepting that something could have been better. There are no compromises, every component exists because it must.",
 
         // Philosophy
         "philosophy.label": "01 \u2014 Philosophy",
