@@ -513,6 +513,67 @@ button { cursor: pointer; border: none; background: none; color: inherit; font-f
     line-height: 1.7;
 }
 
+/* --- Home Audio Tiers --- */
+.ha-tier {
+    border: 1px solid rgba(196,163,90,0.15);
+    border-radius: 12px;
+    background: rgba(255,255,255,0.02);
+    overflow: hidden;
+    transition: border-color 0.4s;
+}
+.ha-tier:hover {
+    border-color: rgba(196,163,90,0.3);
+}
+.ha-tier-header {
+    padding: 48px 48px 32px;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+.ha-tier-name {
+    font-family: var(--font-serif);
+    font-size: clamp(24px, 4vw, 36px);
+    font-weight: 400;
+    margin: 12px 0;
+}
+.ha-tier-tagline {
+    font-family: var(--font-serif);
+    font-style: italic;
+    color: var(--gold);
+    font-size: 16px;
+}
+.ha-tier-content {
+    padding: 40px 48px 48px;
+}
+.ha-tier-lead {
+    font-size: 16px;
+    line-height: 1.8;
+    color: var(--gray-light);
+    margin-bottom: 36px;
+}
+.ha-tier-features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+}
+.ha-feature h4 {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--gold);
+}
+.ha-feature p {
+    font-size: 13px;
+    color: var(--gray);
+    line-height: 1.7;
+}
+
+@media (max-width: 1024px) {
+    .ha-tier-features { grid-template-columns: 1fr; }
+}
+@media (max-width: 768px) {
+    .ha-tier-header { padding: 32px 24px 24px; }
+    .ha-tier-content { padding: 24px 24px 32px; }
+}
+
 /* --- Footer --- */
 .footer {
     padding: 48px 0;
