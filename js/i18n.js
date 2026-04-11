@@ -69,7 +69,7 @@ const translations = {
 
         // Monolite
         "monolite.tagline": "28 Hz. From a box that fits in your hand.",
-        "monolite.desc": "An extraordinary engineering challenge: genuine low-frequency extension to 28 Hz from an enclosure measuring 120 \u00d7 330 \u00d7 180 millimeters. Zero Transmission Architecture eliminates all structural vibration. The bass originates at the MONOLITE membranes, and from nowhere else.",
+        "monolite.desc": "Physics says this should be impossible. Genuine low-frequency extension to 28 Hz from an enclosure measuring 120 \u00d7 330 \u00d7 180 millimeters. Zero Transmission Architecture eliminates all structural vibration. The bass originates at the MONOLITE membranes, and from nowhere else.",
         "monolite.spec1": "Low frequency limit",
         "monolite.spec2": "Linear excursion",
         "monolite.spec3": "Internal volume",
@@ -189,7 +189,7 @@ const translations = {
 
         // Monolite
         "monolite.tagline": "28 Hz. Da una scatola che sta in una mano.",
-        "monolite.desc": "Una sfida ingegneristica straordinaria: estensione genuina in bassa frequenza fino a 28 Hz da un cabinet di 120 \u00d7 330 \u00d7 180 millimetri. L\u2019Architettura Zero Transmission elimina ogni vibrazione strutturale. Il basso origina dalle membrane del MONOLITE, e da nessun altro luogo.",
+        "monolite.desc": "La fisica dice che dovrebbe essere impossibile. Estensione genuina in bassa frequenza fino a 28 Hz da un cabinet di 120 \u00d7 330 \u00d7 180 millimetri. L\u2019Architettura Zero Transmission elimina ogni vibrazione strutturale. Il basso origina dalle membrane del MONOLITE, e da nessun altro luogo.",
         "monolite.spec1": "Limite bassa frequenza",
         "monolite.spec2": "Escursione lineare",
         "monolite.spec3": "Volume interno",
