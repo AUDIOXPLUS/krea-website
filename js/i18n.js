@@ -12,7 +12,7 @@ const translations = {
 
         // Philosophy extras
         "philosophy.subtitle": "Where every speaker begins with a conversation.",
-        "philosophy.p4": "It starts with a conversation. You tell us about your project \u2014 the vehicle, the installation, the goals. We listen carefully, because what you share with us becomes the blueprint for what we build.",
+        "philosophy.p4": "Not a form. It starts with a conversation. You tell us about your project \u2014 the vehicle, the installation, the goals. We listen carefully, because what you share with us becomes the blueprint for what we build. This is not an order process. It is the first step in a relationship that will define how your system sounds for years to come.",
         "philosophy.p5": "From your technical details \u2014 installation position, available volume, amplifier, crossover points \u2014 we calculate the electromechanical identity of your transducer. Every parameter is tailored to your specific acoustic environment.",
         "philosophy.p6": "Resonant frequency. Compliance. Moving mass. Force factor. Every Thiele-Small parameter is optimized not in the abstract, but for your real-world installation. This is how we ensure the result matches the promise.",
         "philosophy.p7": "We verify our work with measurement and listening. Every KREA must perform not just to specification, but to musical satisfaction \u2014 verified with instruments and with ears.",
@@ -27,20 +27,20 @@ const translations = {
         "covenant.excl.p2": "Because each KREA is optimized for a specific installation, transferring it to a different environment means it may not perform as intended. If your plans change, we are here to help \u2014 whether that means recalibrating for a new vehicle or finding the right solution together.",
         "covenant.evo.title": "Continuous Evolution",
         "covenant.evo.lead": "Our work does not end when your KREA is installed. We continue to refine our engineering \u2014 motor geometry, suspension chemistry, voice coil winding \u2014 and these improvements are available to you.",
-        "covenant.evo.p1": "When improvements become available, you access them at cost \u2014 materials and labor only. Send us your transducer, and it returns upgraded. This is what a lifetime relationship looks like.",
+        "covenant.evo.p1": "When improvements become available, Lifetime Card holders access them at cost \u2014 materials and labor only, no market markup. You ship your transducer to KREA. It returns upgraded. This is what a lifetime relationship looks like.",
 
         // Francesco extras
         "francesco.vision.title": "The Vision",
         "francesco.vision.p1": "KREA was born from a deeply personal conviction: that the best sound comes from understanding the person who will hear it. Not just the specifications, not just the vehicle \u2014 but the human being at the center of the experience.",
-        "francesco.vision.p2": "This is why every KREA begins with a conversation, and why every transducer is shaped by the person it is made for. There are no shortcuts, because shortcuts mean accepting that something could have been better. And that is something Francesco has never been willing to do.",
+        "francesco.vision.p2": "This is why every KREA begins with a conversation, and why every transducer is shaped by the person it is made for. There are no shortcuts, because shortcuts mean accepting that something could have been better. There are no compromises, no shortcuts, no catalog parts. Every component exists because it must.",
 
         // Philosophy
         "philosophy.label": "01 \u2014 Philosophy",
         "philosophy.title": "Engineering Without Compromise",
         "philosophy.lead": "We believe that a truly great speaker cannot be designed in isolation. It needs context \u2014 the person who will listen, the space where it will live, the system it will be part of. That is why every KREA begins not with an order, but with a conversation.",
         "philosophy.p1": "We want to know who you are. What inspires you. What you are building. This is not a formality \u2014 it is the foundation of everything we create for you.",
-        "philosophy.p2": "The vehicle, the acoustic environment, the listening goals \u2014 these details shape every decision we make. They allow us to design something that truly belongs to you.",
-        "philosophy.p3": "A KREA is not a product chosen from a catalog. It is something made for a specific purpose, in a specific place, for a specific person.",
+        "philosophy.p2": "The vehicle, the acoustic environment, the listening goals \u2014 these details shape every decision we make and are the foundation of everything that follows. They allow us to design something that truly belongs to you.",
+        "philosophy.p3": "A KREA is not a product chosen from a catalog. It is something made for a specific purpose, in a specific place, for a specific person. Without knowing all three, it cannot exist.",
 
         // Covenant
         "covenant.label": "02 \u2014 Covenant",
@@ -132,7 +132,7 @@ const translations = {
 
         // Philosophy extras
         "philosophy.subtitle": "Dove ogni altoparlante nasce da una conversazione.",
-        "philosophy.p4": "Inizia con una conversazione. Ci racconti il tuo progetto \u2014 il veicolo, l\u2019installazione, gli obiettivi. Noi ascoltiamo con attenzione, perch\u00e9 ci\u00f2 che condividi con noi diventa il progetto di ci\u00f2 che costruiamo.",
+        "philosophy.p4": "Non un modulo. Inizia con una conversazione. Ci racconti il tuo progetto \u2014 il veicolo, l\u2019installazione, gli obiettivi. Noi ascoltiamo con attenzione, perch\u00e9 ci\u00f2 che condividi con noi diventa il progetto di ci\u00f2 che costruiamo. Questo non \u00e8 un processo d\u2019ordine. \u00c8 il primo passo in una relazione che definir\u00e0 il suono del tuo sistema per gli anni a venire.",
         "philosophy.p5": "Dai tuoi dettagli tecnici \u2014 posizione di installazione, volume disponibile, amplificatore, punti di crossover \u2014 calcoliamo l\u2019identit\u00e0 elettromeccanica del tuo trasduttore. Ogni parametro \u00e8 calibrato sul tuo specifico ambiente acustico.",
         "philosophy.p6": "Frequenza di risonanza. Cedevolezza. Massa mobile. Fattore di forza. Ogni parametro Thiele-Small \u00e8 ottimizzato non in astratto, ma per la tua installazione reale. Cos\u00ec ci assicuriamo che il risultato sia all\u2019altezza della promessa.",
         "philosophy.p7": "Verifichiamo il nostro lavoro con misurazioni e ascolto. Ogni KREA deve funzionare non solo secondo le specifiche, ma per soddisfazione musicale \u2014 verificata con gli strumenti e con le orecchie.",
@@ -147,20 +147,20 @@ const translations = {
         "covenant.excl.p2": "Poich\u00e9 ogni KREA \u00e8 ottimizzato per un\u2019installazione specifica, trasferirlo in un ambiente diverso significa che potrebbe non performare come previsto. Se i tuoi piani cambiano, siamo qui per aiutarti \u2014 che si tratti di ricalibrare per un nuovo veicolo o di trovare insieme la soluzione giusta.",
         "covenant.evo.title": "Evoluzione Continua",
         "covenant.evo.lead": "Il nostro lavoro non finisce quando il tuo KREA \u00e8 installato. Continuiamo a perfezionare la nostra ingegneria \u2014 geometria del motore, chimica della sospensione, avvolgimento della bobina \u2014 e questi miglioramenti sono a tua disposizione.",
-        "covenant.evo.p1": "Quando i miglioramenti sono disponibili, puoi accedervi al costo \u2014 solo materiali e manodopera. Spedisci il tuo trasduttore, e torna aggiornato. Ecco come si presenta una relazione che dura tutta la vita.",
+        "covenant.evo.p1": "Quando i miglioramenti sono disponibili, i titolari della Lifetime Card vi accedono al costo \u2014 solo materiali e manodopera, nessun ricarico di mercato. Spedisci il trasduttore a KREA. Torna aggiornato. Ecco come si presenta una relazione che dura tutta la vita.",
 
         // Francesco extras
         "francesco.vision.title": "La Visione",
         "francesco.vision.p1": "KREA \u00e8 nata da una convinzione profondamente personale: che il suono migliore nasce dalla comprensione della persona che lo ascolter\u00e0. Non solo le specifiche, non solo il veicolo \u2014 ma l\u2019essere umano al centro dell\u2019esperienza.",
-        "francesco.vision.p2": "Per questo ogni KREA inizia con una conversazione, e ogni trasduttore \u00e8 plasmato dalla persona per cui \u00e8 fatto. Non ci sono scorciatoie, perch\u00e9 le scorciatoie significano accettare che qualcosa poteva essere migliore. E questo \u00e8 qualcosa che Francesco non \u00e8 mai stato disposto a fare.",
+        "francesco.vision.p2": "Per questo ogni KREA inizia con una conversazione, e ogni trasduttore \u00e8 plasmato dalla persona per cui \u00e8 fatto. Non ci sono scorciatoie, perch\u00e9 le scorciatoie significano accettare che qualcosa poteva essere migliore. Non ci sono compromessi, non ci sono scorciatoie, non ci sono parti da catalogo. Ogni componente esiste perch\u00e9 deve.",
 
         // Philosophy
         "philosophy.label": "01 \u2014 Filosofia",
         "philosophy.title": "Ingegneria Senza Compromessi",
         "philosophy.lead": "Crediamo che un grande altoparlante non possa essere progettato nell\u2019isolamento. Ha bisogno di contesto \u2014 la persona che ascolter\u00e0, lo spazio in cui vivr\u00e0, il sistema di cui far\u00e0 parte. Per questo ogni KREA non inizia con un ordine, ma con una conversazione.",
         "philosophy.p1": "Vogliamo sapere chi sei. Cosa ti ispira. Cosa stai costruendo. Questa non \u00e8 una formalit\u00e0 \u2014 \u00e8 il fondamento di tutto ci\u00f2 che creiamo per te.",
-        "philosophy.p2": "Il veicolo, l\u2019ambiente acustico, gli obiettivi di ascolto \u2014 questi dettagli plasmano ogni decisione che prendiamo. Ci permettono di progettare qualcosa che ti appartiene davvero.",
-        "philosophy.p3": "Un KREA non \u00e8 un prodotto scelto da catalogo. \u00c8 qualcosa fatto per uno scopo specifico, in un luogo specifico, per una persona specifica.",
+        "philosophy.p2": "Il veicolo, l\u2019ambiente acustico, gli obiettivi di ascolto \u2014 questi dettagli plasmano ogni decisione che prendiamo e sono il fondamento di tutto ci\u00f2 che segue. Ci permettono di progettare qualcosa che ti appartiene davvero.",
+        "philosophy.p3": "Un KREA non \u00e8 un prodotto scelto da catalogo. \u00c8 qualcosa fatto per uno scopo specifico, in un luogo specifico, per una persona specifica. Senza conoscere tutti e tre, non pu\u00f2 esistere.",
 
         // Covenant
         "covenant.label": "02 \u2014 Covenant",
