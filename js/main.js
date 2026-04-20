@@ -118,20 +118,36 @@
     const form = document.getElementById('contactForm');
     if (form) {
         form.addEventListener('submit', (e) => {
-            if (form.action.includes('YOUR_FORM_ID')) {
-                e.preventDefault();
-                const btn = form.querySelector('.form-submit');
-                const originalText = btn.textContent;
-                btn.textContent = currentLang === 'it' ? 'Grazie! Ti contatteremo presto.' : 'Thank you! We will contact you soon.';
-                btn.disabled = true;
-                btn.style.opacity = '0.6';
+            e.preventDefault();
+            const btn = form.querySelector('.form-submit');
+            const originalText = btn.textContent;
+            btn.textContent = currentLang === 'it' ? 'Invio in corso...' : 'Sending...';
+            btn.disabled = true;
+            btn.style.opacity = '0.6';
+
+            fetch(form.action, {
+                method: 'POST',
+                body: new FormData(form)
+            })
+            .then(r => r.json())
+            .then(data => {
+                if (data.status === 'ok') {
+                    btn.textContent = currentLang === 'it' ? 'Grazie! Ti contatteremo personalmente.' : 'Thank you! We will contact you personally.';
+                    form.reset();
+                } else {
+                    btn.textContent = currentLang === 'it' ? 'Errore. Riprova.' : 'Error. Please retry.';
+                }
+            })
+            .catch(() => {
+                btn.textContent = currentLang === 'it' ? 'Errore. Riprova.' : 'Error. Please retry.';
+            })
+            .finally(() => {
                 setTimeout(() => {
                     btn.textContent = originalText;
                     btn.disabled = false;
                     btn.style.opacity = '1';
-                    form.reset();
-                }, 3000);
-            }
+                }, 4000);
+            });
         });
     }
 
