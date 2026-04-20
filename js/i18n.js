@@ -6,6 +6,7 @@ const translations = {
         "nav.creations": "Creations",
         "nav.craftsman": "The Craftsman",
         "nav.contact": "Contact",
+        "nav.audiom": "Audiom",
 
         // Hero
         "hero.sub": "Carefully handcrafted in Italy",
@@ -183,6 +184,7 @@ const translations = {
         "nav.creations": "Creazioni",
         "nav.craftsman": "L\u2019Artigiano",
         "nav.contact": "Contatto",
+        "nav.audiom": "Audiom",
 
         // Hero
         "hero.sub": "Accuratamente realizzato a mano in Italia",
