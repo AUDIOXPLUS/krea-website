@@ -19,8 +19,59 @@ if (empty($name) || empty($email)) {
     exit;
 }
 
-$to = 'amministrazione@krea-audio.com';
-$subject = 'KREA Audio — New Project Inquiry from ' . $name;
+$smtpHost = 'krea-audio.com';
+$smtpPort = 465;
+$smtpUser = 'noreply@krea-audio.com';
+$smtpPass = '21Aprile2026';
+
+function smtpSend($host, $port, $user, $pass, $from, $to, $subject, $body, $replyTo) {
+    $ctx = stream_context_create(['ssl' => ['verify_peer' => false, 'verify_peer_name' => false]]);
+    $sock = stream_socket_client("ssl://$host:$port", $errno, $errstr, 10, STREAM_CLIENT_CONNECT, $ctx);
+    if (!$sock) return false;
+
+    $resp = fgets($sock, 512);
+
+    $cmds = [
+        "EHLO krea-audio.com",
+        "AUTH LOGIN",
+        base64_encode($user),
+        base64_encode($pass),
+        "MAIL FROM:<$from>",
+        "RCPT TO:<$to>",
+        "DATA"
+    ];
+
+    foreach ($cmds as $cmd) {
+        fwrite($sock, "$cmd\r\n");
+        $resp = '';
+        while ($line = fgets($sock, 512)) {
+            $resp .= $line;
+            if (isset($line[3]) && $line[3] === ' ') break;
+        }
+        if (strpos($resp, '5') === 0 || strpos($resp, '4') === 0) {
+            fwrite($sock, "QUIT\r\n");
+            fclose($sock);
+            return false;
+        }
+    }
+
+    $headers = "MIME-Version: 1.0\r\n";
+    $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
+    $headers .= "From: KREA Audio <$from>\r\n";
+    $headers .= "To: $to\r\n";
+    $headers .= "Reply-To: $replyTo\r\n";
+    $headers .= "Subject: $subject\r\n";
+    $headers .= "Date: " . date('r') . "\r\n";
+
+    $message = $headers . "\r\n" . $body . "\r\n.\r\n";
+    fwrite($sock, $message);
+    $resp = fgets($sock, 512);
+
+    fwrite($sock, "QUIT\r\n");
+    fclose($sock);
+
+    return strpos($resp, '250') === 0;
+}
 
 $adminBody = '
 <html>
@@ -29,7 +80,6 @@ $adminBody = '
 body { font-family: "Helvetica Neue", Arial, sans-serif; color: #333; background: #f5f5f5; margin: 0; padding: 0; }
 .container { max-width: 600px; margin: 0 auto; background: #fff; }
 .header { background: #0a0a0a; padding: 32px; text-align: center; }
-.header img { height: 40px; }
 .header h2 { color: #c4a35a; font-size: 14px; letter-spacing: 3px; text-transform: uppercase; margin: 16px 0 0; font-weight: 400; }
 .body { padding: 32px; }
 .field { margin-bottom: 20px; }
@@ -108,18 +158,13 @@ body { font-family: "Helvetica Neue", Arial, sans-serif; color: #333; background
 </body>
 </html>';
 
-$headers = "MIME-Version: 1.0\r\n";
-$headers .= "Content-Type: text/html; charset=UTF-8\r\n";
-$headers .= "From: KREA Audio <amministrazione@krea-audio.com>\r\n";
-$headers .= "Reply-To: " . $email . "\r\n";
+$adminSent = smtpSend($smtpHost, $smtpPort, $smtpUser, $smtpPass,
+    $smtpUser, 'amministrazione@krea-audio.com', $subject = 'KREA Audio — New Project Inquiry from ' . $name,
+    $adminBody, $email);
 
-$clientHeaders = "MIME-Version: 1.0\r\n";
-$clientHeaders .= "Content-Type: text/html; charset=UTF-8\r\n";
-$clientHeaders .= "From: KREA Audio <amministrazione@krea-audio.com>\r\n";
-$clientHeaders .= "Reply-To: amministrazione@krea-audio.com\r\n";
-
-$adminSent = mail($to, $subject, $adminBody, $headers);
-$clientSent = mail($email, $clientSubject, $clientBody, $clientHeaders);
+$clientSent = smtpSend($smtpHost, $smtpPort, $smtpUser, $smtpPass,
+    $smtpUser, $email, $clientSubject,
+    $clientBody, 'amministrazione@krea-audio.com');
 
 if ($adminSent) {
     echo json_encode(['status' => 'ok']);
