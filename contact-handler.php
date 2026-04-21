@@ -110,12 +110,12 @@ body { font-family: "Helvetica Neue", Arial, sans-serif; color: #333; background
 
 $headers = "MIME-Version: 1.0\r\n";
 $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
-$headers .= "From: KREA Audio <noreply@krea-audio.com>\r\n";
+$headers .= "From: KREA Audio <amministrazione@krea-audio.com>\r\n";
 $headers .= "Reply-To: " . $email . "\r\n";
 
 $clientHeaders = "MIME-Version: 1.0\r\n";
 $clientHeaders .= "Content-Type: text/html; charset=UTF-8\r\n";
-$clientHeaders .= "From: KREA Audio <noreply@krea-audio.com>\r\n";
+$clientHeaders .= "From: KREA Audio <amministrazione@krea-audio.com>\r\n";
 $clientHeaders .= "Reply-To: amministrazione@krea-audio.com\r\n";
 
 $adminSent = mail($to, $subject, $adminBody, $headers);
