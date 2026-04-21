@@ -7,6 +7,14 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     exit;
 }
 
+$configFile = dirname(__DIR__) . '/mail-config.php';
+if (!file_exists($configFile)) {
+    http_response_code(500);
+    echo json_encode(['status' => 'error', 'message' => 'Mail configuration not found']);
+    exit;
+}
+require $configFile;
+
 $name = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_SPECIAL_CHARS) ?: '';
 $email = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL) ?: '';
 $phone = filter_input(INPUT_POST, 'phone', FILTER_SANITIZE_SPECIAL_CHARS) ?: '';
@@ -18,11 +26,6 @@ if (empty($name) || empty($email)) {
     echo json_encode(['status' => 'error', 'message' => 'Name and email are required']);
     exit;
 }
-
-$smtpHost = 'krea-audio.com';
-$smtpPort = 465;
-$smtpUser = 'noreply@krea-audio.com';
-$smtpPass = '21Aprile2026';
 
 function smtpSend($host, $port, $user, $pass, $from, $to, $subject, $body, $replyTo) {
     $ctx = stream_context_create(['ssl' => ['verify_peer' => false, 'verify_peer_name' => false]]);
@@ -158,13 +161,13 @@ body { font-family: "Helvetica Neue", Arial, sans-serif; color: #333; background
 </body>
 </html>';
 
-$adminSent = smtpSend($smtpHost, $smtpPort, $smtpUser, $smtpPass,
-    $smtpUser, 'amministrazione@krea-audio.com', $subject = 'KREA Audio — New Project Inquiry from ' . $name,
+$adminSent = smtpSend(SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASS,
+    SMTP_USER, SMTP_ADMIN, 'KREA Audio — New Project Inquiry from ' . $name,
     $adminBody, $email);
 
-$clientSent = smtpSend($smtpHost, $smtpPort, $smtpUser, $smtpPass,
-    $smtpUser, $email, $clientSubject,
-    $clientBody, 'amministrazione@krea-audio.com');
+$clientSent = smtpSend(SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASS,
+    SMTP_USER, $email, $clientSubject,
+    $clientBody, SMTP_ADMIN);
 
 if ($adminSent) {
     echo json_encode(['status' => 'ok']);
