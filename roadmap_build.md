@@ -68,7 +68,7 @@ Espressamente fuori scope per questo repo:
 - **E-commerce / carrello.** KREA non vende online dal sito brand.
 - **Backend custom** (Node, Python, Go). L'unica concessione server-side e' `contact-handler.php`.
 - **Build pipeline / bundler** (Webpack, Vite, ecc.). Le pagine devono restare apribili direttamente.
-- **CI/CD automatico.** Deploy manuale rimane la scelta consapevole (vedi `KREA_Website_Decisioni.md` D-006).
+- **CI/CD automatico GitHub Actions.** Il deploy oggi avviene via cPanel "Git Version Control" su Hostico (vedi `KREA_Website_Decisioni.md` D-006). Eventuale auto-deploy esplicito (cron `git pull` lato server, GitHub Action che chiama l'API cPanel, o webhook custom) e' una decisione aperta — non in scope di Fase B.
 - **Logica `audiom.krea-audio.com`.** E' un servizio separato su Google, ha repo/deploy propri.
 
 ---
@@ -79,6 +79,10 @@ Espressamente fuori scope per questo repo:
 hosting Hostico + DNS krea-audio.com
         |
         v
+cPanel "Git Version Control" (repo Krea1)
+   clone in /home/sjspmnch/public_html
+        |
+        v
 pagine HTML statiche  ->  css/style.css
                       ->  js/main.js
                       ->  js/i18n.js
@@ -87,7 +91,7 @@ pagine HTML statiche  ->  css/style.css
 contact-handler.php  ->  mail-config.php (FUORI dal repo, sul server)
 ```
 
-Ogni modifica a un nodo richiede regression visiva sulla pagina e, per il form, smoke test SMTP.
+Ogni modifica a un nodo richiede regression visiva sulla pagina e, per il form, smoke test SMTP. Dopo ogni push significativo su `master`, verificare HEAD del repo cPanel (`https://krea-audio.com:2083` -> Git Version Control -> Krea1 -> Manage -> HEAD Commit) per confermare che il "Update from Remote" sia avvenuto.
 
 ---
 

@@ -15,7 +15,7 @@ Cruscotto operativo. Stato corrente, prossimo task, ticket aperti.
 - **Pagine attive:** index, philosophy, craftsman, creations, gallery, compare, contact, covenant.
 - **Pagine unlisted:** `homeaudio.html` (esiste ma e' stata nascosta dalla nav, vedi commit `d81e23f`).
 - **Sottodominio collegato:** `audiom.krea-audio.com` (Google `ghs.googlehosted.com`, repo/deploy separati).
-- **CI/CD:** nessuna. Deploy manuale (FTP/cPanel/SSH) su Hostico.
+- **CI/CD:** nessuna su GitHub. Deploy avviene tramite cPanel "Git Version Control": repo `Krea1` clonato in `/home/sjspmnch/public_html` (= docroot) e aggiornato con "Update from Remote" (= `git pull origin master`). Trigger del pull non identificato (no cron, no webhook, no Actions). Vedi `KREA_Website_Decisioni.md` D-006.
 
 ---
 

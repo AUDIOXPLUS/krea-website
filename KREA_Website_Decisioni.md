@@ -25,12 +25,12 @@ Memoria stabile delle decisioni architetturali / di prodotto sul sito `krea-webs
 **Data:** dedotta dal setup di produzione
 **Stato:** Attiva
 
-**Decisione:** il sito e' deployato su **Hostico** (`glc47.hostico.ro`, IP `188.241.222.53`, NS `ns1-4.hostico.ro`), shared hosting PHP rumeno, invece che su piattaforme JAMstack moderne (Vercel, Netlify, Cloudflare Pages, GitHub Pages).
+**Decisione:** il sito e' deployato su **Hostico** (`glc47.hostico.ro`, IP `188.241.222.53`, NS `ns1-4.hostico.ro`), shared hosting PHP rumeno, invece che su piattaforme JAMstack moderne (Vercel, Netlify, Cloudflare Pages, GitHub Pages). Il document root e' `/home/sjspmnch/public_html` (utente cPanel `sjspmnch`). cPanel tema `jupiter`, accesso `https://krea-audio.com:2083`. Server `Apache` con HTTP/2 (`Upgrade: h2,h2c`).
 
 **Motivo:** il form contatti richiede esecuzione **PHP** server-side (`contact-handler.php` con SMTP via `stream_socket_client`). Vercel/Netlify/Pages non eseguono PHP, costringerebbero a riscrivere il form come Function/Worker o ad appoggiarsi a un servizio terzo (Formspree, Resend) — overhead non giustificato per la scala del sito.
 
 **Impatto:**
-- Deploy manuale (vedi D-006), niente CI/CD nativo.
+- Deploy via cPanel Git Version Control (vedi D-006), niente CI/CD su GitHub.
 - L'hosting fornisce mailbox `amministrazione@krea-audio.com` integrata.
 - Eventuale migrazione futura a JAMstack richiederebbe sostituire `contact-handler.php` con una Function.
 
@@ -85,19 +85,39 @@ Memoria stabile delle decisioni architetturali / di prodotto sul sito `krea-webs
 
 ---
 
-## D-006 — Deploy manuale, niente CI/CD
+## D-006 — Deploy via cPanel "Git Version Control" sulla working copy del docroot
 
-**Data:** dedotta dall'assenza di `.github/workflows`, `vercel.json`, `netlify.toml`, ecc.
-**Stato:** Attiva
+**Data:** verificata 2026-05-07 sul cPanel di Hostico
+**Stato:** Attiva (con un "trigger" non identificato, vedi sotto)
 
-**Decisione:** il deploy avviene manualmente (FTP / cPanel / SSH) verso Hostico. Non c'e' GitHub Actions ne' webhook. Il push su `master` NON triggera nessun deploy.
+**Decisione:** il deploy NON e' manuale via FTP. Il sito e' una **working copy git** clonata direttamente nel document root tramite la feature **"Git™ Version Control" di cPanel**:
 
-**Motivo:** Hostico shared non ha integrazione Git nativa pratica. Il sito ha frequenza di update bassa (rewrite copy, asset puntuali). L'overhead di settare CI/CD non e' giustificato.
+- Nome repo lato cPanel: `Krea1`
+- Path locale: `/home/sjspmnch/public_html` (= document root)
+- Remote: `https://github.com/AUDIOXPLUS/krea-website.git`
+- Branch checked-out: `master`
+- Niente `.cpanel.yml` deploy script: i file vengono serviti direttamente dalla working copy, quindi un `git pull` aggiorna istantaneamente cio' che Apache serve
+- Aggiornamento avviene cliccando **"Update from Remote"** nel pannello (= `git pull origin master`)
+
+**Verifica empirica (2026-05-07):** HEAD del repo cPanel = `9dfa0eb` = `origin/master`; `Last-Modified` HTTP delle pagine coincide al minuto col timestamp del commit GitHub (es. `philosophy.html` Last-Modified `Tue, 21 Apr 2026 06:43:03 GMT` vs commit `9dfa0eb` autorato `2026-04-21 07:50:07 +0000` = stesso giorno, scarto di un'ora circa).
+
+**Trigger del pull — NON IDENTIFICATO.** Verificate e tutte negative:
+- webhook GitHub (`gh api repos/AUDIOXPLUS/krea-website/hooks` = `[]`)
+- deploy key (`gh api .../keys` = `[]`)
+- GitHub Actions di deploy (esiste solo `pages-build-deployment` residuo, non collegato a Hostico)
+- `.cpanel.yml` (assente — il pannello dice "system cannot deploy")
+- cron job cPanel ("Nessun processo Cron")
+- shell SSH Hostico (disabilitata, warning su "Git Version Control")
+
+Ipotesi residua piu' probabile (non confermata): una **sessione Claude precedente** ha pullato chiamando l'API cPanel (UAPI `VersionControlDeployment::create_pull`) con credenziali fornite dall'utente in passato. Compatibile con il fatto che i commit recenti su `master` sono autorati `Claude <noreply@anthropic.com>` e il messaggio di `9dfa0eb` contiene il link `claude.ai/code/session_014v1wAAhKx8kjfHRYLAJwj7`. **Francesco conferma di non cliccare lui il bottone "Update from Remote".**
+
+**Motivo del setup:** e' la configurazione predefinita di Hostico/cPanel quando si collega un repo GitHub dal pannello. Senza un build step (sito vanilla), il `git pull` nel docroot equivale al deploy.
 
 **Impatto:**
-- Per pubblicare una modifica: edit -> commit/push (history) -> upload manuale dei file modificati su Hostico.
-- Possibile drift fra `master` e prod se l'upload viene saltato. Mitigazione: chi modifica deve sempre uploadare.
-- Cambiamento futuro a Vercel/Netlify (vedi D-002) implicherebbe anche introdurre CI/CD; sono decisioni accoppiate.
+- Per pubblicare una modifica: push su `master` -> qualcuno preme "Update from Remote" in cPanel -> sito live aggiornato. Il "qualcuno" oggi non e' chiaramente attribuito.
+- Niente PR-gating del deploy: il merge su master di per se' NON aggiorna il sito. Serve l'azione cPanel.
+- Possibile drift latente fra `master` e prod se nessuno preme il bottone. Mitigazione: verificare HEAD del repo cPanel vs origin dopo ogni merge significativo (basta aprire la tab "Pull or Deploy" e controllare HEAD Commit).
+- Per rendere il trigger esplicito e tracciabile, opzioni future: cron lato server `git pull`, GitHub Action che chiama l'API cPanel, oppure un webhook custom.
 
 ---
 

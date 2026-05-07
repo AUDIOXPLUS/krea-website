@@ -88,7 +88,7 @@ Se `STATUS.md` e `roadmap_build.md` sembrano in conflitto, `STATUS.md` descrive 
 - **i18n via attributi `data-i18n`.** Non hardcodare stringhe direttamente nei tag `<title>`/`<meta>`/contenuto se sono traducibili.
 - **Mobile-first sui breakpoint critici.** Verifica sempre il rendering su `< 600px`: il sito e' brand-vetrina, l'esperienza mobile deve essere impeccabile.
 - **Voce del brand.** Per copy ed elementi testuali, riferirsi ai manifesti `KREA_*.txt`. Tono: caldo, tecnico, rispettoso del settore, no marketing aggressivo, no DSP.
-- **Deploy manuale.** Non c'e' CI/CD: ogni modifica viene caricata su Hostico via FTP / cPanel / SSH. Considera l'impatto pre-merge.
+- **Deploy via cPanel "Git Version Control".** Il sito e' una working copy git in `/home/sjspmnch/public_html` (utente cPanel `sjspmnch`) clonata da `origin/master`. L'aggiornamento avviene cliccando **"Update from Remote"** nel pannello cPanel (`https://krea-audio.com:2083` -> Git Version Control -> repo `Krea1` -> Pull or Deploy). Niente CI/CD su GitHub (no webhook, no deploy keys, no Actions). Niente `.cpanel.yml`. Push su `master` NON triggera deploy automatico: serve l'azione esplicita lato cPanel. Vedi `KREA_Website_Decisioni.md` D-006 per il dettaglio (incluso il fatto che il "chi" preme il bottone non e' formalmente identificato).
 - **Conferma prima di azioni irreversibili.** Push forzato, delete branch, modifica file su prod, drop di config: chiedi prima a Francesco.
 
 ---
@@ -105,7 +105,8 @@ Se `STATUS.md` e `roadmap_build.md` sembrano in conflitto, `STATUS.md` descrive 
 - PHP per `contact-handler.php` (SMTP raw via `stream_socket_client`)
 
 **Hosting:**
-- Hostico shared (PHP + LiteSpeed, Bucarest, Romania)
+- Hostico shared (PHP + Apache + HTTP/2, Bucarest, Romania), tema cPanel `jupiter`, utente `sjspmnch`, docroot `/home/sjspmnch/public_html`
+- Repo `Krea1` clonato in docroot tramite cPanel "Git Version Control" (= deploy diretto via working copy)
 - Sottodominio `audiom.krea-audio.com` su Google (servizio separato, non in questo repo)
 
 **Tooling locale (opzionale):**
