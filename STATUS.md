@@ -21,7 +21,15 @@ Cruscotto operativo. Stato corrente, prossimo task, ticket aperti.
 
 ## Prossimo Task
 
-- [ ] **TODO:** definire prossimo lavoro. Nessun task assegnato al momento (Francesco aggiornera' questa sezione quando inizia il prossimo intervento).
+- [ ] **Indagine deploy: capire se e' automatico.** Sessione del 2026-05-07 ha lasciato aperto il dubbio (vedi `KREA_Website_Decisioni.md` D-006). Tutte le ipotesi standard sono escluse (no webhook GitHub, no deploy keys, no Actions, no `.cpanel.yml`, no cron cPanel, no SSH). "Last Login IP" del cPanel = `185.250.144.219` (INNOVIA, IT) → plausibilmente Francesco da casa. Test pratico programmato:
+  1. Dopo il merge della PR docs (#3), prendere nota dell'hash master post-merge.
+  2. Aspettare qualche ora **senza aprire cPanel**.
+  3. Riaprire `https://krea-audio.com:2083` -> Git Version Control -> Krea1 -> Manage e leggere "HEAD Commit".
+  4. Se HEAD = hash post-merge -> esiste un automatismo invisibile da approfondire (probabile chiamata UAPI da sessione Claude precedente con credenziali memorizzate). Se HEAD e' rimasto `9dfa0eb` -> il pull non avviene da solo, qualcuno (forse Francesco senza ricordarlo) lo preme manualmente.
+  5. In caso (A) automatismo confermato: cercare credenziali cPanel in `~/.claude/`, MCP server config, o variabili d'ambiente sul PC, per identificare il client che chiama l'API.
+  6. In caso (B): decidere se introdurre auto-deploy esplicito (GitHub Action -> cPanel API, oppure cron `git pull` lato server con kill-switch).
+
+- [ ] **TODO:** altri lavori da definire da Francesco.
 
 ---
 
